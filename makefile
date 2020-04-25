@@ -10,14 +10,17 @@ __ : main
 	./main   
 	            
 	            
-main : main.o document.o 
+main : main.o hashmap.o 
 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -o $@ $^ 		            
 	            
 main.o : main.c
 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ 
 
-document.o : document.c
+hashmap.o : hashmap.c
 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ 
+
+# token.o : token.c
+# 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ 
 
 # textManip.o : textManip.c
 # 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ 

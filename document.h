@@ -5,18 +5,21 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <token.h>
 
 /** Structure containing a single document*/
 struct document
 {
-    char *header;     ///< header of the document
-    fpos_t textPos;   ///< Position of the beginning of the article in file
-    int textLenght;   ///< Lenght of the raw article
-    fpos_t tokenPos;  ///< Position of the beginning of the tokens
-    int tokensLength; ///< Length of the preprocessed article
+    fpos_t headerPos;                       ///< Header of the document position
+    int headerLenght;                       ///< Length of the header
+    fpos_t textPos;                         ///< Position of the beginning of the article in file
+    int textLenght;                         ///< Lenght of the raw article
+    struct tokenListElem *tokenHead;        ///< Pointer to the head of the token list
+    struct tokenListElem *TextRankKeywords; ///< Pointer to the head of textrank keywords lsit
+    struct tokenListElem *TFIDFKeywords;    ///< Pointer to the head of TF-IDF keywords list
 };
 
-/** document one way linked list*/
+/** Document one way linked list*/
 struct docLinkedListElem
 {
     struct document *docPtr;         ///< Pointer to the stored document
@@ -24,10 +27,11 @@ struct docLinkedListElem
 };
 
 /** Array of pointers to documents ant its size*/
-struct docArray
+struct docData
 {
     struct document **documentPointers; ///< Array of pointers to documents
     int size;                           ///< Size of the docArray
+    // struct allTokensListElem *occurrencesHead; ///<Head of the word occurance list
 };
 
 /**
@@ -36,46 +40,21 @@ struct docArray
  * @param fileStream filestream on which the document array shall be created
  * @return struct docArray* Pointer to the document array
  */
-struct docArray *createDocArrayFromFile(FILE *fileStream);
-
-/**
- * @brief Creates a one way linked list of all documents
- * 
- * @param fileStream File stream of the articles file
- * @param[out] numberOfElements changed by reference - number of elements in a created list
- * @return struct docLinkedListElem pointer to the head of document list 
- */
-struct docLinkedListElem *createDocListFromFile(FILE *fileStream, int *numberOfElements);
-
-// /**
-//  * @brief Counts the number of elements in a document linked list
-//  *
-//  * @param docHead head of documents list
-//  * @return int number of elements
-//  */
-// int countDocLinkedListElements(struct docLinkedListElem *docHead);
+struct docData *createDocDataFromFile(FILE *fileStream);
 
 /**
  * @brief Adds document to the document list at the head position.
  * 
- * @param pHeadPointer 
- * @param doc 
+ * @param pHeadPointer pointer to list head pointer
+ * @param doc pointer to the added document
  */
-void addDocToDocListHead(struct docLinkedListElem **pHeadPointer, struct document *doc);
+void addToDocListHead(struct docLinkedListElem **pHead, struct document *doc);
 
 /**
- * @brief Frees the memory taken by the document array and all the documents stored in it
+ * @brief Frees memory taken by the docData
  * 
- * @param array pointer to the document array
+ * @param data pointer to the docData instance
  */
-void deleteDocArray(struct docArray *array);
-
-/**
- * @brief Prints the given document
- * 
- * @param fileStream file on which the document is based
- * @param doc pointer to the printed document
- */
-void printDocument(FILE *fileStream, struct document *doc);
+void deleteDocData(struct docData *data);
 
 #endif
