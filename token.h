@@ -13,14 +13,15 @@ struct tokenListElem
 };
 
 /** List of the tokens that were present at least once in the document*/
-struct localTokensListElem
+struct occurenceListElem
 {
-    char *token;                       ///< String containing the token
-    struct localTokensListElem *pNext; ///< Pointer to the next element
+    char *token;                     ///< String containing the token
+    int count;                       ///< Occurence counter
+    struct occurenceListElem *pNext; ///< Pointer to the next element
 };
 
 /**
- * @brief Adds token to token list
+ * @brief Adds token to token list on head position
  * 
  * @param pHead Pointer to the list head pointer
  * @param token Text token
@@ -28,25 +29,25 @@ struct localTokensListElem
 void addToTokenList(struct tokenListElem **pHead, char *token);
 
 /**
- * @brief Adds token to local token list
+ * @brief Increments the word occurence counter or creates new one 
  * 
  * @param pHead Pointer to the list head pointer
  * @param token Text token
  */
-void addToLocalTokenList(struct localTokensListElem **pHead, char *token);
+void addToOccurenceList(struct occurenceListElem **pHead, char *token);
 
 /**
  * @brief Frees the memory taken by the list and nullifies pointer
  * 
- * @param pHead 
+ * @param pHead Pointer to the list head pointer
  */
 void freeTokenList(struct tokenListElem **pHead);
 
 /**
  * @brief Frees the memory taken by the list and nullifies pointer
  * 
- * @param pHead 
+ * @param pHead Pointer to the list head pointer
  */
-void freeLocalTokenList(struct localTokensListElem **pHead);
+void freeOccurenceList(struct occurenceListElem **pHead);
 
 #endif
