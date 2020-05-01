@@ -28,18 +28,12 @@ def preparePipeline(text: str):
     ])
 
 
-preparePipeline(df["text"][100])
-
-df["prep"] = df["text"].apply(preparePipeline)
-
-# def fixText(text: str) -> str:
-#     return text.replace('"', "'")
-
-# df["text"] = df["text"].apply(fixText)
+# preparePipeline(df["text"][100])
 
 df["text"] = df["text"].apply(transformers.fixText)
 
-# df.head()
+df["prep"] = df["text"].apply(preparePipeline)
+
 
 significant = df[['title', 'text', 'prep']]
 

@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /** Element of the text token linked list*/
 struct tokenListElem
@@ -29,19 +30,19 @@ struct occurenceListElem
 void addToTokenList(struct tokenListElem **pHead, char *token);
 
 /**
+ * @brief Frees the memory taken by the list and nullifies pointer
+ * 
+ * @param pHead Pointer to the list head pointer
+ */
+void freeTokenList(struct tokenListElem **pHead);
+
+/**
  * @brief Increments the word occurence counter or creates new one 
  * 
  * @param pHead Pointer to the list head pointer
  * @param token Text token
  */
 void addToOccurenceList(struct occurenceListElem **pHead, char *token);
-
-/**
- * @brief Frees the memory taken by the list and nullifies pointer
- * 
- * @param pHead Pointer to the list head pointer
- */
-void freeTokenList(struct tokenListElem **pHead);
 
 /**
  * @brief Frees the memory taken by the list and nullifies pointer

@@ -6,7 +6,7 @@ void addToTokenList(struct tokenListElem **pHead, char *token)
     newElem->token = token;
     newElem->pNext = *pHead;
     *pHead = newElem;
-};
+}
 
 void addToOccurenceList(struct occurenceListElem **pHead, char *token)
 {
@@ -38,6 +38,8 @@ void addToOccurenceList(struct occurenceListElem **pHead, char *token)
                 runnerPtr->pNext = newElem;
                 shallContinue = 0;
             }
+            else
+                runnerPtr = runnerPtr->pNext;
         }
     }
 }

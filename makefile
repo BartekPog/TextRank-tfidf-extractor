@@ -10,7 +10,7 @@ __ : main
 	./main   
 	            
 	            
-main : main.o hashmap.o 
+main : main.o hashmap.o token.o reading_utils.o count_import.o
 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -o $@ $^ 		            
 	            
 main.o : main.c
@@ -18,12 +18,15 @@ main.o : main.c
 
 hashmap.o : hashmap.c
 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ 
+ 
+token.o : token.c
+	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ 
 
-# token.o : token.c
-# 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ 
+reading_utils.o : reading_utils.c
+	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ 
 
-# textManip.o : textManip.c
-# 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ 
+count_import.o : count_import.c
+	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ 
 
 
 # libs/stmr.o : 

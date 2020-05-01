@@ -52,6 +52,8 @@ void addOccurenceToMap(struct tokenHashmap *hashmap, char *token)
                 runnerPtr->pNext = newElem;
                 shallContinue = 0;
             }
+            else
+                runnerPtr = runnerPtr->pNext;
         }
     }
 }
