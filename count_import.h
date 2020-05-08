@@ -17,7 +17,7 @@ struct countData
 };
 
 /**
- * @brief Get the countData object pointer
+ * @brief Get the countData object pointer, Does not change the file pointer
  * 
  * @param file pointer to the file
  * @return struct countData* pointer to newly created object containing basic info about document 

@@ -20,5 +20,6 @@ char *readOneWord(FILE *file)
         word[i] = getc(file);
 
     word[length] = '\0';
+
     return word;
 }

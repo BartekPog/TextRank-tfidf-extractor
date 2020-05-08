@@ -7,6 +7,8 @@ struct countData *getCountData(FILE *file)
         printf("ERR: Cannot open file\n");
         return NULL;
     }
+    fpos_t fileStart;
+    fgetpos(file, &fileStart);
 
     int shallContinue = 1;
 
@@ -19,7 +21,6 @@ struct countData *getCountData(FILE *file)
 
     while (shallContinue)
     {
-
         for (int i = 0; (i < 2) && (shallContinue); i++)
         {
 
@@ -89,11 +90,13 @@ struct countData *getCountData(FILE *file)
 
         freeOccurenceList(&docOccurencesHead);
 
+        //Skipping trailing spaces
         while ((shallContinue) && (character = getc(file) != '\n'))
             if (character == EOF)
                 shallContinue = 0;
     }
 
+    fsetpos(file, &fileStart);
     return data;
 }
 

@@ -4,8 +4,10 @@
 #include "hashmap.h"
 #include "token.h"
 #include "count_import.h"
+#include "rewrite.h"
 
 #define DEFAULT_IN_FILE "data/prepared.csv"
+#define DEFAULT_OUT_FILE "data/sample_out.csv"
 
 /**
  * @brief main algorithm
@@ -24,6 +26,9 @@
  * NOTES:
  * - columns: HEADING, TEXT, PREPARED_TEXT
  * 
+ * TODO:
+ * - test rewriting file without keywords
+ * 
  * @return int 
  */
 
@@ -36,27 +41,22 @@ int main()
     if (!inFile)
     {
         printf("ERR: cannot open file\n");
+        fclose(inFile);
         return 0;
     }
 
     printf("Counting words and documents\n");
     struct countData *cntData = getCountData(inFile);
 
+    FILE *outFile = fopen(DEFAULT_OUT_FILE, "w");
+
+    printf("Rewriting with keywords\n");
+    rewriteWithKeywords(inFile, outFile, cntData, 3);
+
     printf("Cleaning memory\n");
+    fclose(outFile);
+    fclose(inFile);
     freeCountData(&cntData);
-
-    // struct tokenHashmap *map = initTokenHashmap();
-
-    // addOccurenceToMap(map, "one");
-    // addOccurenceToMap(map, "two");
-    // addOccurenceToMap(map, "one");
-    // addOccurenceToMap(map, "one");
-
-    // printf("%s: %d\n", "one", getOccurenceFromMap(map, "one"));
-    // printf("%s: %d\n", "two", getOccurenceFromMap(map, "two"));
-    // printf("%s: %d\n", "three", getOccurenceFromMap(map, "three"));
-
-    // freeHashmap(map);
 
     return 0;
 }
