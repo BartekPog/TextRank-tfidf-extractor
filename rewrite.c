@@ -46,6 +46,9 @@ int rewriteWithKeywords(FILE *inFile, FILE *outFile, struct countData *cntData, 
         struct tokenListElem *tokenHead = tokenizeField(inFile);
 
         ///TESTONG
+
+        // writeList(outFile, tokenHead);
+
         ///TODO
         // fprintf(outFile, "raz, dwa, trzeci");
         // fprintf(stdout, "%s, %p, trzeci\n", tokenHead->token, tokenHead->pNext);
@@ -154,4 +157,24 @@ struct tokenListElem *tokenizeField(FILE *inFile)
     } while ((character != '\n') && (character != ',') && (character != EOF));
 
     return tokenHead;
+}
+
+int writeList(FILE *outFile, struct tokenListElem *tokenHead)
+{
+    if (!outFile)
+        return 1;
+    if (!tokenHead)
+        return 0;
+
+    fprintf(outFile, "\"%s\"", tokenHead->token);
+
+    tokenHead = tokenHead->pNext;
+
+    while (tokenHead)
+    {
+        fprintf(outFile, ",\"%s\"", tokenHead->token);
+        tokenHead = tokenHead->pNext;
+    }
+
+    return 0;
 }

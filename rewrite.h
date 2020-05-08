@@ -51,4 +51,13 @@ int rewriteField(FILE *inFile, FILE *outFile);
  */
 struct tokenListElem *tokenizeField(FILE *inFile);
 
+/**
+ * @brief Writes given token list to a output stream separated by comma 
+ * 
+ * @param outFile Pointer to the output file stream
+ * @param tokenHead Pointer to the list head
+ * @return int 0 if no errors 
+ */
+int writeList(FILE *outFile, struct tokenListElem *tokenHead);
+
 #endif
