@@ -9,7 +9,9 @@
 #include "token.h"
 #include "reading_utils.h"
 
-/** Structure returned after first reading of the document */
+/** Structure returned after first reading of the document 
+ *  Describes presence of each word in documents
+*/
 struct countData
 {
     int documentsNumber;             ///< Number of documents in a file

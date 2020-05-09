@@ -27,7 +27,13 @@
  * - columns: HEADING, TEXT, PREPARED_TEXT
  * 
  * TODO:
- * - test rewriting file without keywords
+ * - Write Tf-idf algorithm
+ * - Update Rewrite.c - Test writing to file on tf-idf
+ * - Write textrank
+ * - test both
+ * - handle start parameters 
+ * - handle errors
+ * - write documentation
  * 
  * @return int 
  */

@@ -1,5 +1,5 @@
 kompilator=gcc
-standard=-std=c11
+standard=-std=gnu11 # -std=c11
 optymalizacja=-O3
 errors=-pedantic-errors
 profilowanie=-pg

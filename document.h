@@ -1,5 +1,7 @@
 /** @file */
 
+//NOT USEFUL
+
 #ifndef DOCUMENT
 #define DOCUMENT
 

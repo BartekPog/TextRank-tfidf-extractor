@@ -3,7 +3,7 @@
 void addToTokenList(struct tokenListElem **pHead, char *token)
 {
     struct tokenListElem *newElem = malloc(sizeof(struct tokenListElem));
-    newElem->token = token;
+    newElem->token = strdup(token);
     newElem->pNext = *pHead;
     *pHead = newElem;
 }
@@ -13,7 +13,7 @@ void addToOccurenceList(struct occurenceListElem **pHead, char *token)
     if (*pHead == NULL)
     {
         struct occurenceListElem *newElem = malloc(sizeof(struct occurenceListElem));
-        newElem->token = token;
+        newElem->token = strdup(token);
         newElem->count = 1;
         newElem->pNext = NULL;
         *pHead = newElem;
@@ -32,7 +32,7 @@ void addToOccurenceList(struct occurenceListElem **pHead, char *token)
             else if (runnerPtr->pNext == NULL)
             {
                 struct occurenceListElem *newElem = malloc(sizeof(struct occurenceListElem));
-                newElem->token = token;
+                newElem->token = strdup(token);
                 newElem->count = 1;
                 newElem->pNext = NULL;
                 runnerPtr->pNext = newElem;
@@ -51,12 +51,24 @@ void freeTokenList(struct tokenListElem **pHead)
     while (*pHead)
     {
         pSub = (*pHead)->pNext;
+        free((*pHead)->token);
         free(*pHead);
         *pHead = pSub;
     }
 
     *pHead = NULL;
     return;
+}
+
+int getOccurenceListLength(struct occurenceListElem *pHead)
+{
+    int cnt = 0;
+    while (pHead)
+    {
+        pHead = pHead->pNext;
+        cnt++;
+    }
+    return cnt;
 }
 
 void freeOccurenceList(struct occurenceListElem **pHead)
@@ -66,6 +78,7 @@ void freeOccurenceList(struct occurenceListElem **pHead)
     while (*pHead)
     {
         pSub = (*pHead)->pNext;
+        free((*pHead)->token);
         free(*pHead);
         *pHead = pSub;
     }

@@ -45,6 +45,14 @@ void freeTokenList(struct tokenListElem **pHead);
 void addToOccurenceList(struct occurenceListElem **pHead, char *token);
 
 /**
+ * @brief Gets the Occurence List Length
+ * 
+ * @param pHead head of the occurence list 
+ * @return int length of the list
+ */
+int getOccurenceListLength(struct occurenceListElem *pHead);
+
+/**
  * @brief Frees the memory taken by the list and nullifies pointer
  * 
  * @param pHead Pointer to the list head pointer

@@ -11,8 +11,6 @@
  */
 int rewriteWithKeywords(FILE *inFile, FILE *outFile, struct countData *cntData, int keywordNum)
 {
-    // int DEBUG_ARTICLE_INDEX = 0;
-
     if (!inFile)
     {
         printf("ERR: Cannot read input file\n");
@@ -21,6 +19,7 @@ int rewriteWithKeywords(FILE *inFile, FILE *outFile, struct countData *cntData, 
     if (!outFile)
     {
         printf("ERR: Cannot write to output file\n");
+        return 1;
     }
 
     int shallContinue = 1;
@@ -45,35 +44,11 @@ int rewriteWithKeywords(FILE *inFile, FILE *outFile, struct countData *cntData, 
 
         struct tokenListElem *tokenHead = tokenizeField(inFile);
 
-        ///TESTONG
+        ///TESTING
 
-        // writeList(outFile, tokenHead);
-
-        ///TODO
-        // fprintf(outFile, "raz, dwa, trzeci");
-        // fprintf(stdout, "%s, %p, trzeci\n", tokenHead->token, tokenHead->pNext);
-
-        // struct tokenListElem *pRunner = tokenHead;
-
-        // int count = 0;
-        // while (pRunner)
-        // {
-        //     count++;
-        //     pRunner = pRunner->pNext;
-        // }
-        // if (count < 50)
-        // {
-        //     printf("TINY ARTICLE %d: %d\n", DEBUG_ARTICLE_INDEX, count);
-        //     struct tokenListElem *pRunner = tokenHead;
-
-        //     while (pRunner)
-        //     {
-        //         printf("%s ", pRunner->token);
-        //         pRunner = pRunner->pNext;
-        //     }
-        //     printf("\n");
-        //     getchar();
-        // }
+        // writeList(outFile, tokenHead);   TF-IDF
+        // fputc(',', outFile);
+        // writeList(outFile, tokenHead);   TextRank
 
         // Do the thing
 
@@ -139,8 +114,8 @@ struct tokenListElem *tokenizeField(FILE *inFile)
 
         if (len)
             addToTokenList(&tokenHead, word);
-        else
-            free(word);
+
+        free(word);
 
         character = getc(inFile);
         if (character == EOF)

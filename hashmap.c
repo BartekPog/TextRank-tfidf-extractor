@@ -27,7 +27,7 @@ void addOccurenceToMap(struct tokenHashmap *hashmap, char *token)
     if (*headPtr == NULL)
     {
         struct hashTokenListElem *newElem = malloc(sizeof(struct hashTokenListElem));
-        newElem->token = token;
+        newElem->token = strdup(token);
         newElem->count = 1;
         newElem->pNext = NULL;
         *headPtr = newElem;
@@ -46,7 +46,7 @@ void addOccurenceToMap(struct tokenHashmap *hashmap, char *token)
             else if (runnerPtr->pNext == NULL)
             {
                 struct hashTokenListElem *newElem = malloc(sizeof(struct hashTokenListElem));
-                newElem->token = token;
+                newElem->token = strdup(token);
                 newElem->count = 1;
                 newElem->pNext = NULL;
                 runnerPtr->pNext = newElem;
@@ -88,6 +88,7 @@ void freeHashTokenList(struct hashTokenListElem **pHead)
     while (*pHead)
     {
         pSub = (*pHead)->pNext;
+        free((*pHead)->token);
         free(*pHead);
         *pHead = pSub;
     }

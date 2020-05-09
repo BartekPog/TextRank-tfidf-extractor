@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include <assert.h>
 
 #include "hashmap.h"
@@ -10,6 +11,7 @@
 int main()
 {
     printf("\nTesting\n");
+
     struct tokenListElem *tokenHead = NULL;
     addToTokenList(&tokenHead, "one");
     addToTokenList(&tokenHead, "two");
@@ -22,6 +24,21 @@ int main()
 
     assert(isalpha('o'));
     assert(isalnum('o'));
+
+    struct occurenceListElem *occHead = NULL;
+    addToOccurenceList(&occHead, "one");
+    addToOccurenceList(&occHead, "one");
+    addToOccurenceList(&occHead, "one");
+    addToOccurenceList(&occHead, "two");
+
+    assert(getOccurenceListLength(occHead) == 2);
+
+    freeOccurenceList(&occHead);
+    assert(occHead == NULL);
+
+    char *word = strdup("word");
+    assert(strcmp(word, "word") == 0);
+    free(word);
 
     printf("Done\n");
     return 0;

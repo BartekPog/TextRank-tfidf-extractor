@@ -66,6 +66,7 @@ struct countData *getCountData(FILE *file)
             {
                 char *word = readOneWord(file);
                 addToOccurenceList(&docOccurencesHead, word);
+                free(word);
 
                 character = getc(file);
                 if (character == EOF)
