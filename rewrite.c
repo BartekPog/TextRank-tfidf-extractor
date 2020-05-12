@@ -45,8 +45,10 @@ int rewriteWithKeywords(FILE *inFile, FILE *outFile, struct countData *cntData, 
         struct tokenListElem *tokenHead = tokenizeField(inFile);
 
         ///TESTING
+        struct tokenListElem *tfIdfTokenHead = getTfIdfKeywords(keywordNum, tokenHead, cntData);
 
-        // writeList(outFile, tokenHead);   TF-IDF
+        writeList(outFile, tfIdfTokenHead); //TF-IDF
+        freeTokenList(&tfIdfTokenHead);
         // fputc(',', outFile);
         // writeList(outFile, tokenHead);   TextRank
 

@@ -16,7 +16,7 @@ int hash(char *token)
 {
     long hash = 0;
     for (int i = 0; i < strlen(token); i++)
-        hash += token[i] * (i + 1);
+        hash += (token[i] * (i + 1)) % HASHMAP_SIZE;
     return hash % HASHMAP_SIZE;
 }
 

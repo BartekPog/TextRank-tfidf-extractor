@@ -10,8 +10,8 @@ __ : main
 	./main   
 	            
 	            
-main : main.o hashmap.o token.o reading_utils.o count_import.o rewrite.o
-	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -o $@ $^ 		            
+main : main.o hashmap.o token.o reading_utils.o count_import.o rewrite.o tf_idf.o
+	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -o $@ $^ 	-lm            
 	            
 main.o : main.c
 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ 
@@ -31,7 +31,10 @@ count_import.o : count_import.c
 rewrite.o : rewrite.c
 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ 
 
-test: test.o hashmap.o token.o reading_utils.o count_import.o rewrite.o
+tf_idf.o : tf_idf.c
+	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^  -lm
+
+test: test.o hashmap.o token.o reading_utils.o count_import.o rewrite.o tf_idf.o
 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -o $@ $^ && ./$@
 
 test.o: test.c

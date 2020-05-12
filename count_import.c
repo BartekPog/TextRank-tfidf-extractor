@@ -72,7 +72,7 @@ struct countData *getCountData(FILE *file)
                 if (character == EOF)
                     shallContinue = 0;
 
-            } while (character == ' ' && shallContinue);
+            } while (character != '"' && shallContinue);
         }
 
         ///Resaving the tokens to the hashmap
