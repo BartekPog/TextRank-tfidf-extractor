@@ -22,7 +22,7 @@ struct tfIdfToken
  * @brief Gets the Tf-Idf keywords list 
  * 
  * @param expectedKeywords Number of keywords to extract
- * @param tokenHead list of tokens - tokenized article
+ * @param tokenHead list of tokens - tokenized articl0e
  * @param cntData occurence data of all words
  * @return struct tokenListElem* head of keywords list 
  */
