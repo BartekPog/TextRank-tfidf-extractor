@@ -4,6 +4,7 @@
 #define TEXTRANK_GRAPH
 
 #include <stdlib.h>
+#include <string.h>
 
 #include "token.h"
 
@@ -32,15 +33,6 @@ struct textRankNode
  * @return struct textRankNodeListElem* pointer to the head of graph list 
  */
 struct textRankNodeListElem *generateTextRankGraph(struct tokenListElem *tokenHead, int adjacencyWindow);
-
-/**
- * @brief Creates a connection between words in graph
- * 
- * @param token1 first word to connect
- * @param token2 second word to connect
- * @param nodesHead head of the nodes list
- */
-void addTextRankWordConection(char *token1, char *token2, struct textRankNodeListElem *nodesHead);
 
 /**
  * @brief Connects two nodes - adds each other to lists of adjacent 

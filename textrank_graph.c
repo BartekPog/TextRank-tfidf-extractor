@@ -14,7 +14,7 @@ struct textRankNodeListElem *generateTextRankGraph(struct tokenListElem *tokenHe
         {
             struct textRankNode *neighbouring = getOrCreateTextRankNode(&graph, pRunner->token);
 
-            connectTextRankNodes(&current, &neighbouring);
+            connectTextRankNodes(current, neighbouring);
 
             pRunner = pRunner->pNext;
         }
@@ -23,15 +23,6 @@ struct textRankNodeListElem *generateTextRankGraph(struct tokenListElem *tokenHe
 
     return graph;
 }
-
-// /**
-//  * @brief Creates a connection between words in graph
-//  *
-//  * @param token1 first word to connect
-//  * @param token2 second word to connect
-//  * @param nodesHead head of the nodes list
-//  */
-// void addTextRankWordConection(char *token1, char *token2, struct textRankNodeListElem *nodesHead);
 
 void connectTextRankNodes(struct textRankNode *node1, struct textRankNode *node2)
 {
@@ -48,18 +39,47 @@ void connectTextRankNodes(struct textRankNode *node1, struct textRankNode *node2
     node2->adjacentHead = connection21;
 }
 
-/**
- * @brief Create an empty Text Rank Node 
- * 
- * @param graphHead pointer to the graph head pointer
- * @param token word stored in the new node
- * @return struct textRankNode* newly created text rank node
- */
 struct textRankNode *getOrCreateTextRankNode(struct textRankNodeListElem **graphHead, char *token)
 {
-    //TODO
     if (!(*graphHead))
     {
-        // *graphHead = malloc(sizeof)
+        *graphHead = malloc(sizeof(struct textRankNodeListElem));
+        (*graphHead)->pNext = NULL;
+
+        struct textRankNode *newNode = malloc(sizeof(struct textRankNode));
+        newNode->token = strdup(token);
+        newNode->currentScore = 1;
+        newNode->nextScore = 0;
+        newNode->adjacentNum = 0;
+        newNode->adjacentHead = NULL;
+
+        (*graphHead)->node = newNode;
+        return newNode;
     }
+
+    struct textRankNodeListElem *graphRunner = *graphHead;
+
+    while (graphRunner->pNext)
+    {
+        if (strcmp(graphRunner->node->token, token) == 0)
+            return graphRunner->node;
+
+        graphRunner = graphRunner->pNext;
+    }
+
+    if (strcmp(graphRunner->node->token, token) == 0)
+        return graphRunner->node;
+
+    graphRunner->pNext = malloc(sizeof(struct textRankNodeListElem));
+    graphRunner->pNext->pNext = NULL;
+
+    struct textRankNode *newNode = malloc(sizeof(struct textRankNode));
+    newNode->token = strdup(token);
+    newNode->currentScore = 1;
+    newNode->nextScore = 0;
+    newNode->adjacentNum = 0;
+    newNode->adjacentHead = NULL;
+
+    graphRunner->pNext->node = newNode;
+    return newNode;
 }

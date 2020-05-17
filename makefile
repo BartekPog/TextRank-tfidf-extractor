@@ -10,7 +10,7 @@ __ : main
 	./main   
 	            
 	            
-main : main.o hashmap.o token.o reading_utils.o count_import.o rewrite.o tf_idf.o
+main : main.o hashmap.o token.o reading_utils.o count_import.o rewrite.o tf_idf.o textrank.o textrank_graph.o textrank_score.o 
 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -o $@ $^ 	-lm            
 	            
 main.o : main.c
@@ -34,11 +34,22 @@ rewrite.o : rewrite.c
 tf_idf.o : tf_idf.c
 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^  -lm
 
-test: test.o hashmap.o token.o reading_utils.o count_import.o rewrite.o tf_idf.o
-	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -o $@ $^ && ./$@
+textrank.o : textrank.c
+	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^  -lm
+
+textrank_graph.o : textrank_graph.c
+	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^  -lm
+
+textrank_score.o : textrank_score.c
+	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^  -lm
+
+
+
+test: test.o hashmap.o token.o reading_utils.o count_import.o rewrite.o tf_idf.o textrank.o textrank_graph.o textrank_score.o 
+	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -o $@ $^  -lm && ./$@  
 
 test.o: test.c
-	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ 
+	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ -lm
 
 
 # libs/stmr.o : 
