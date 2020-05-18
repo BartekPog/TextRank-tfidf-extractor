@@ -10,12 +10,12 @@ struct tokenListElem *getTfIdfKeywords(int expectedKeywords, struct tokenListEle
 
     freeOccurenceList(&occHead);
 
-    //sorting
+    // Srting
     qsort(scoresArr, length, sizeof(struct tfIdfToken), tfIdfSortingComparator);
 
     struct tokenListElem *keywordHead = NULL;
 
-    //adding to list the N best where N is expected keywords
+    // Adding to list the N best where N is expected keywords
     for (int i = 0; i < expectedKeywords; i++)
     {
         if (i < length)

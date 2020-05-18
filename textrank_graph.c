@@ -83,3 +83,50 @@ struct textRankNode *getOrCreateTextRankNode(struct textRankNodeListElem **graph
     graphRunner->pNext->node = newNode;
     return newNode;
 }
+
+int getTextRankNodeCount(struct textRankNodeListElem *graph)
+{
+    int count = 0;
+    while (graph)
+    {
+        count++;
+        graph = graph->pNext;
+    }
+
+    return count;
+}
+
+struct textRankNode **textRankGraphToArray(struct textRankNodeListElem *graph, int nodeCount)
+{
+    struct textRankNode **nodeArray = malloc(sizeof(struct textRankNode *) * nodeCount);
+
+    struct textRankNodeListElem *graphSub;
+    for (int i = 0; i < nodeCount; i++)
+    {
+        nodeArray[i] = graph->node;
+
+        graphSub = graph->pNext;
+        free(graph);
+        graph = graphSub;
+    }
+    return nodeArray;
+}
+
+void freeTextRankNodesArray(struct textRankNode **nodeArray, int length)
+{
+    for (int i = 0; i < length; i++)
+    {
+        struct textRankNodeListElem *adjRunner = nodeArray[i]->adjacentHead;
+        struct textRankNodeListElem *adjRunnerSub;
+        while (adjRunner)
+        {
+            adjRunnerSub = adjRunner->pNext;
+            free(adjRunner);
+            adjRunner = adjRunnerSub;
+        }
+
+        free(nodeArray[i]->token);
+        free(nodeArray[i]);
+    }
+    free(nodeArray);
+}

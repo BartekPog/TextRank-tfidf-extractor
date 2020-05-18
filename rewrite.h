@@ -9,6 +9,7 @@
 #include "count_import.h"
 #include "token.h"
 #include "tf_idf.h"
+#include "textrank.h"
 
 /**
  * @brief Writes the HEADING, ARTICLE and set of found keywords to the outputFile

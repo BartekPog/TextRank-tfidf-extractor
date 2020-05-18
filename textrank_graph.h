@@ -51,4 +51,29 @@ void connectTextRankNodes(struct textRankNode *node1, struct textRankNode *node2
  */
 struct textRankNode *getOrCreateTextRankNode(struct textRankNodeListElem **graphHead, char *token);
 
+/**
+ * @brief Get the Text Rank Node Count 
+ * 
+ * @param graph Pointer to the graph head
+ * @return int 
+ */
+int getTextRankNodeCount(struct textRankNodeListElem *graph);
+
+/**
+ * @brief Transforms graph to array of node pointers
+ * 
+ * @param graph Pointer to the graph head
+ * @param nodeCount Number of nodes in the graph
+ * @return struct extRankNode* array Array of graph node pointers
+ */
+struct textRankNode **textRankGraphToArray(struct textRankNodeListElem *graph, int nodeCount);
+
+/**
+ * @brief Free memory taken by the node arrray 
+ * 
+ * @param nodeArray Array of nodes
+ * @param length length of array
+ */
+void freeTextRankNodesArray(struct textRankNode **nodeArray, int length);
+
 #endif

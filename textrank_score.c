@@ -18,7 +18,7 @@ void processTextRankIterations(struct textRankNodeListElem *graph, int iteration
             graphRunner = graphRunner->pNext;
         }
 
-        updateScores(graph);
+        updateTextRankScores(graph);
     }
 }
 
@@ -35,12 +35,37 @@ void donateTextRankScore(struct textRankNode *giverNode)
     }
 }
 
-void updateScores(struct textRankNodeListElem *graph)
+void updateTextRankScores(struct textRankNodeListElem *graph)
 {
     while (graph)
     {
         graph->node->currentScore = graph->node->nextScore;
         graph->node->nextScore = 0;
+        graph = graph->pNext;
+    }
+}
+
+/**
+ * @brief Multiplies each node score by inverse document frequency of a node
+ *
+ * @param graph pointer to graph
+ * @param cntData pointer to count data
+ */
+void multiplyTextRankScoresByIdf(struct textRankNodeListElem *graph, struct countData *cntData)
+{
+    while (graph)
+    {
+        char *token = graph->node->token;
+
+        int numberOfDocsWithToken = getOccurenceFromMap(cntData->occurences, token);
+
+        if (numberOfDocsWithToken == 0)
+            graph->node->currentScore = 0;
+
+        double idf = log((cntData->documentsNumber) * 1.0 / numberOfDocsWithToken);
+
+        graph->node->currentScore *= idf;
+
         graph = graph->pNext;
     }
 }
