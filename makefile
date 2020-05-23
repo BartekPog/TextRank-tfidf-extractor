@@ -10,12 +10,15 @@ __ : main
 	./main   
 	            
 	            
-main : main.o hashmap.o token.o reading_utils.o count_import.o rewrite.o tf_idf.o textrank.o textrank_graph.o textrank_score.o 
+main : main.o handle_input.o hashmap.o token.o reading_utils.o count_import.o rewrite.o tf_idf.o textrank.o textrank_graph.o textrank_score.o 
 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -o $@ $^ 	-lm            
 	            
 main.o : main.c
 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ 
 
+handle_input.o : handle_input.c
+	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ 
+ 
 hashmap.o : hashmap.c
 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^ 
  
