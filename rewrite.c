@@ -1,14 +1,5 @@
 #include "rewrite.h"
 
-/** TESTING TODO
- * @brief Writes the HEADING, ARTICLE and set of found keywords to the outputFile
- * 
- * @param inFile Pointer to the input file stream set on start position
- * @param outFile Pointer to the output file stream set on start position
- * @param cntData Count data necessary for IDF 
- * @param keywordNum Number of keywords to find
- * @return int returns 0 if there were no errors
- */
 int rewriteWithKeywords(FILE *inFile, FILE *outFile, struct countData *cntData, int keywordNum)
 {
     if (!inFile)
@@ -21,6 +12,7 @@ int rewriteWithKeywords(FILE *inFile, FILE *outFile, struct countData *cntData, 
         printf("ERR: Cannot write to output file\n");
         return 1;
     }
+    writeHeaders(outFile, keywordNum);
 
     int shallContinue = 1;
     int fieldStatus;
@@ -160,5 +152,17 @@ int writeList(FILE *outFile, struct tokenListElem *tokenHead)
         tokenHead = tokenHead->pNext;
     }
 
+    return 0;
+}
+
+int writeHeaders(FILE *outFile, int keywordsNum)
+{
+    fprintf(outFile, "Heading,Content");
+    char names[3][20] = {"Tf_idf", "TextRank", "TextRank_idf"};
+    for (int nameId = 0; nameId < 3; nameId++)
+        for (int i = 0; i < keywordsNum; i++)
+            fprintf(outFile, ",%s_%d", names[nameId], i + 1);
+
+    fprintf(outFile, "\n");
     return 0;
 }

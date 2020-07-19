@@ -16,7 +16,6 @@ struct inputParameters
     char *inFile;   ///< Input file name
     char *outFile;  ///< Output file name
     int keywordNum; ///< Number of keywords to extract
-    // int help;
 };
 
 /**

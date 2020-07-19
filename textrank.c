@@ -1,16 +1,5 @@
 #include "textrank.h"
 
-/**
- * @brief Get the Text Rankf Keywords list
- * 
- * @param expectedKeywords number of keywords to extract
- * @param tokenHead list of tokens - tokenized article
- * @param cntData occurence data of all words
- * @param idf 1 if scores shall be multiplied by the idf factor, 0 otherwise
- * @param adjacencyWindow How far can a word be from the other to be concidered "close"
- * @param iterations Number of algotithm iterations
- * @return struct tokenListElem* list of keywords
- */
 struct tokenListElem *getTextRankfKeywords(int expectedKeywords, struct tokenListElem *tokenHead, struct countData *cntData, int idf, int adjacencyWindow, int iterations)
 {
     if ((!tokenHead) || (expectedKeywords < 1) || (iterations < 1) || (adjacencyWindow < 1))

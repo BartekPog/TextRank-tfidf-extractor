@@ -62,4 +62,13 @@ struct tokenListElem *tokenizeField(FILE *inFile);
  */
 int writeList(FILE *outFile, struct tokenListElem *tokenHead);
 
+/**
+ * @brief Writes file headers to the output file 
+ * 
+ * @param outFile Output file stream
+ * @param keywordsNum Number of keywords per method
+ * @return int 0 if no errors
+ */
+int writeHeaders(FILE *outFile, int keywordsNum);
+
 #endif
