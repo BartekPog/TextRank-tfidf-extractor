@@ -10,7 +10,7 @@ __ : main
 	./main   
 	            
 	            
-main : main.o handle_input.o hashmap.o token.o reading_utils.o count_import.o rewrite.o tf_idf.o textrank.o textrank_graph.o textrank_score.o 
+main : main.o handle_input.o hashmap.o token.o reading_utils.o count_import.o rewrite.o tf_idf.o textrank.o textrank_graph.o textrank_score.o files_test.o
 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -o $@ $^ 	-lm            
 	            
 main.o : main.c
@@ -46,9 +46,14 @@ textrank_graph.o : textrank_graph.c
 textrank_score.o : textrank_score.c
 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^  -lm
 
+files_test.o : files_test.c
+	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -c -o $@ $^  -lm
 
 
-test: test.o hashmap.o token.o reading_utils.o count_import.o rewrite.o tf_idf.o textrank.o textrank_graph.o textrank_score.o 
+
+
+
+test: test.o hashmap.o token.o reading_utils.o count_import.o rewrite.o tf_idf.o textrank.o textrank_graph.o textrank_score.o files_test.o
 	$(kompilator) $(standard) $(debug) $(optymalizacja) $(errors) -o $@ $^  -lm && ./$@  
 
 test.o: test.c

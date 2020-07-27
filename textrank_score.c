@@ -45,12 +45,6 @@ void updateTextRankScores(struct textRankNodeListElem *graph)
     }
 }
 
-/**
- * @brief Multiplies each node score by inverse document frequency of a node
- *
- * @param graph pointer to graph
- * @param cntData pointer to count data
- */
 void multiplyTextRankScoresByIdf(struct textRankNodeListElem *graph, struct countData *cntData)
 {
     while (graph)

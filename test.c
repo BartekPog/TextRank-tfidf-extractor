@@ -7,6 +7,9 @@
 #include "token.h"
 #include "count_import.h"
 #include "rewrite.h"
+#include "files_test.h"
+
+#define INPUT_FILE "data/prepared.csv"
 
 int main()
 {
@@ -39,6 +42,9 @@ int main()
     char *word = strdup("word");
     assert(strcmp(word, "word") == 0);
     free(word);
+
+    assert(isInputFileOk(INPUT_FILE));
+    assert(isInputFileOk("asdf") == 0);
 
     printf("Done\n");
     return 0;
