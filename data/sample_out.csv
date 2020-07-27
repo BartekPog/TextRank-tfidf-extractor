@@ -334,7 +334,7 @@ Hope you enjoyed this article! If you’d like to stay connected, you’ll find 
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Curious programmer, tinkers around in Python and deep learning.
 Sharing concepts, ideas, and codes.
-","filter","feature","convolution","convolution","input","output","filter","feature","convolution"
+","filter","feature","convolution","feature","input","output","filter","feature","convolution"
 "An intro to Machine Learning for designers – UX Collective","There is an ongoing debate about whether or not designers should write code. Wherever you fall on this issue, most people would agree that designers should know about code. This helps designers understand constraints and empathize with developers. It also allows designers to think outside of the pixel perfect box when problem solving. For the same reasons, designers should know about machine learning.
 Put simply, machine learning is a “field of study that gives computers the ability to learn without being explicitly programmed” (Arthur Samuel, 1959). Even though Arthur Samuel coined the term over fifty years ago, only recently have we seen the most exciting applications of machine learning — digital assistants, autonomous driving, and spam-free email all exist thanks to machine learning.
 Over the past decade new algorithms, better hardware, and more data have made machine learning an order of magnitude more effective. Only in the past few years companies like Google, Amazon, and Apple have made some of their powerful machine learning tools available to developers. Now is the best time to learn about machine learning and apply it to the products you are building.
@@ -383,7 +383,7 @@ This article was originally published on conordewey.com
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Data Scientist & Writer | www.conordewey.com
 Sharing concepts, ideas, and codes.
-","ab","science","interview","post","interview","science","ab","science","interview"
+","ab","science","interview","sure","interview","science","ab","science","interview"
 "Must know Information Theory concepts in Deep Learning (AI)","Information theory is an important field that has made significant contribution to deep learning and AI, and yet is unknown to many. Information theory can be seen as a sophisticated amalgamation of basic building blocks of deep learning: calculus, probability and statistics. Some examples of concepts in AI that come from Information theory or related fields:
 In the early 20th century, scientists and engineers were struggling with the question: “How to quantify the information? Is there a analytical way or a mathematical measure that can tell us about the information content?”. For example, consider below two sentences:
 It is not difficult to tell that the second sentence gives us more information since it also tells that Bruno is “big” and “brown” in addition to being a “dog”. How can we quantify the difference between two sentences? Can we have a mathematical measure that tells us how much more information second sentence have as compared to the first?
@@ -899,7 +899,7 @@ Update 2: Nafrondel’s excellent, detailed reply is also a must read for an exp
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 A tinkerer
 Our community publishes stories worth reading on development, design, and data science.
-","zeroshot","translate","translation","neural","google","translation","zeroshot","translate","translation"
+","zeroshot","translate","translation","article","google","translation","zeroshot","translate","translation"
 "Machine Learning is Fun! Part 2 – Adam Geitgey – Medium","Update: This article is part of a series. Check out the full series: Part 1, Part 2, Part 3, Part 4, Part 5, Part 6, Part 7 and Part 8!
 You can also read this article in Italiano, Español, Français, Türkçe, Русский, 한국어 Português, فارسی, Tiếng Việt or 普通话.
 In Part 1, we said that Machine Learning is using generic algorithms to tell you something interesting about your data without writing any code specific to the problem you are solving. (If you haven’t already read part 1, read it now!).
@@ -1143,7 +1143,7 @@ Originally published at www.developerzen.com on August 14, 2009.
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Maker of things. Big data geek. Food Lover.
 The essence of Software Development ...
-","median","database","attribute","example","database","value","median","database","attribute"
+","median","database","attribute","attribute","database","value","median","database","attribute"
 "Interview with Google’s Alfred Spector on voice search, hybrid intelligence and more","Google’s a pretty good search engine, right? Well, you ain’t seen nothing yet. VP of research Alfred Spector talks to Oliver Lindberg about the technologies emerging from Google Labs — from voice search to hybrid intelligence and beyond
 This article originally appeared in issue 198 of .net magazine in 2010 and was republished at www.techradar.com.
 Google has always been tight-lipped about products that haven’t launched yet. It’s no secret, however, that thanks to the company’s bottom-up culture, its engineers are working on tons of new projects at the same time. Following the mantra of ‘release early, release often’, the speed at which the search engine giant is churning out tools is staggering. At the heart of it all is Alfred Spector, Google’s Vice President of Research and Special Initiatives.
@@ -1175,7 +1175,7 @@ Interviews with leading tech entrepreneurs and web designers, conducted by @oliv
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Facebook Messenger & Chatbot, Machine Learning & Big Data
 生命如此短暂,掌握技艺却要如此长久
-","samplingpldalda","bleilda","prml","learningprml","chatbot","aimachine","blei","learningprml","aimachine"
+","samplingpldalda","bleilda","prml","facebook","learningprml","messenger","tonyshareldasciencetopic","blei","learningprml"
 "Netflix Recommendations: Beyond the 5 stars (Part 1)","by Xavier Amatriain and Justin Basilico (Personalization Science and Engineering)
 In this two-part blog post, we will open the doors of one of the most valued Netflix assets: our recommendation system. In Part 1, we will relate the Netflix Prize to the broader recommendation challenge, outline the external components of our personalized service, and highlight how our task has evolved with the business. In Part 2, we will describe some of the data and models that we use and discuss our approach to algorithmic innovation that combines offline machine learning experimentation with online AB testing. Enjoy... and remember that we are always looking for more star talent to add to our great team, so please take a look at our jobs page.
 In 2006 we announced the Netflix Prize, a machine learning and data mining competition for movie rating prediction. We offered $1 million to whoever improved the accuracy of our existing system called Cinematch by 10%. We conducted this competition to find new ways to improve the recommendations we provide to our members, which is a key part of our business. However, we had to come up with a proxy question that was easier to evaluate and quantify: the root mean squared error (RMSE) of the predicted rating. The race was on to beat our RMSE of 0.9525 with the finish line of reducing it to 0.8572 or less.
@@ -1444,7 +1444,7 @@ The figure above (Figure 13) is a concrete example of sampling bias. Say you wan
 There you have it. Being mindful of these limitations does not guarantee that your ML algorithm will solve all your problems, but it certainly reduces the risk of being disappointed when your model doesn’t generalize to unseen data. Now go on young Jedi: train your model, you must!
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 @nomadic_mind. Sometimes the difference between success and failure is the same as between = and ==. Living is in the details. 
-","unseen","leakage","hypothesis","price","hypothesis","model","unseen","leakage","hypothesis"
+","unseen","leakage","hypothesis","predict","hypothesis","model","unseen","leakage","hypothesis"
 "Classifying Websites with Neural Networks – Knowledge from Data: The Datafiniti Blog","At Datafiniti, we have a strong need for converting unstructured web content into structured data. For example, we’d like to find a page like:
 and do the following:
 Both of these are hard things for a computer to do in an automated manner. While it’s easy for you or me to realize that the above web page is selling some jeans, a computer would have a hard time making the distinction from the above page from either of the following web pages:
@@ -1710,7 +1710,7 @@ Disclaimer: Bloomberg Beta is an investor in Adatao, Alation, Aviso, BrightFunne
 For the full resolution version of the landscape please click here.
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Partner at Bloomberg Beta. All about machine intelligence for good. Equal parts nerd and athlete. Straight up Canadian stereotype and proud of it.
-","demo","landscape","intelligence","landscape","machine","intelligence","demo","intelligence","landscape"
+","demo","landscape","intelligence","many","machine","intelligence","demo","landscape","intelligence"
 "Architecting a Machine Learning System for Risk – Airbnb Engineering & Data Science – Medium","By Naseem Hakim & Aaron Keys
 At Airbnb, we want to build the world’s most trusted community. Guests trust Airbnb to connect them with world-class hosts for unique and memorable travel experiences. Airbnb hosts trust that guests will treat their home with the same care and respect that they would their own. The Airbnb review system helps users find community members who earn this trust through positive interactions with others, and the ecosystem as a whole prospers.
 The overwhelming majority of web users act in good faith, but unfortunately, there exists a small number of bad actors who attempt to profit by defrauding websites and their communities. The trust and safety team at Airbnb works across many disciplines to help protect our users from these bad actors, ideally before they have the opportunity to impart negativity on the community.
@@ -2082,7 +2082,7 @@ Even as you get more familiar with TensorFlow, pieces of Scikit Flow will be use
 Part 2 — Deep Neural Networks, Custom TensorFlow models with Scikit Flow and Digit recognition with Convolutional Networks.
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Co-Founder @ NEAR.AI — teaching machines to code. I’m tweeting as @ilblackdragon.
-","tensorflow","scikit","tflearn","learn","flow","tensorflow","tensorflow","scikit","tflearn"
+","tensorflow","scikit","tflearn","flow","learn","tensorflow","tensorflow","scikit","tflearn"
 "The Unreasonable Effectiveness of Random Forests – Rants on Machine Learning – Medium","It’s very common for machine learning practitioners to have favorite algorithms. It’s a bit irrational, since no algorithm strictly dominates in all applications, the performance of ML algorithms varies wildly depending on the application and the dimensionality of the dataset. And even for a given problem and a given dataset, any single model will likely be beaten by an ensemble of diverse models trained by diverse algorithms anyway. But people have favorites nevertheless. Some like SVMs for the elegance of their formulation or the quality of the available implementations, some like decision rules for their simplicity and interpretability, and some are crazy about neural networks for their flexibility.
 My favorite out-of-the-box algorithm is (as you might have guessed) the Random Forest, and it’s the second modeling technique I typically try on any given data set (after a linear model).
 This beautiful visualization from scikit-learn illustrates the modelling capacity of a decision forest:
@@ -2882,7 +2882,7 @@ Update 2: Nafrondel’s excellent, detailed reply is also a must read for an exp
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 A tinkerer
 Our community publishes stories worth reading on development, design, and data science.
-","zeroshot","translate","translation","neural","google","translation","zeroshot","translate","translation"
+","zeroshot","translate","translation","article","google","translation","zeroshot","translate","translation"
 "Every single Machine Learning course on the internet, ranked by your reviews","A year and a half ago, I dropped out of one of the best computer science programs in Canada. I started creating my own data science master’s program using online resources. I realized that I could learn everything I needed through edX, Coursera, and Udacity instead. And I could learn it faster, more efficiently, and for a fraction of the cost.
 I’m almost finished now. I’ve taken many data science-related courses and audited portions of many more. I know the options out there, and what skills are needed for learners preparing for a data analyst or data scientist role. So I started creating a review-driven guide that recommends the best courses for each subject within data science.
 For the first guide in the series, I recommended a few coding classes for the beginner data scientist. Then it was statistics and probability classes. Then introductions to data science. Also, data visualization.
@@ -3731,7 +3731,7 @@ I am a lover of technology and how it can be applied in the business world. I ru
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 AI guy. MapQuest guy. Grow, innovate and transform companies with tech. Start-up investor, mentor and geek.
 Sharing concepts, ideas, and codes.
-","corporate","gold","ai","software","machine","ai","corporate","gold","ai"
+","corporate","gold","ai","many","machine","ai","corporate","gold","ai"
 "The fall of RNN / LSTM – Towards Data Science","We fell for Recurrent neural networks (RNN), Long-short term memory (LSTM), and all their variants. Now it is time to drop them!
 It is the year 2014 and LSTM and RNN make a great come-back from the dead. We all read Colah’s blog and Karpathy’s ode to RNN. But we were all young and unexperienced. For a few years this was the way to solve sequence learning, sequence translation (seq2seq), which also resulted in amazing results in speech to text comprehension and the raise of Siri, Cortana, Google voice assistant, Alexa. Also let us not forget machine translation, which resulted in the ability to translate documents into different languages or neural machine translation, but also translate images into text, text into images, and captioning video, and ... well you got the idea.
 Then in the following years (2015–16) came ResNet and Attention. One could then better understand that LSTM were a clever bypass technique. Also attention showed that MLP network could be replaced by averaging networks influenced by a context vector. More on this later.
@@ -4003,7 +4003,7 @@ Hope you enjoyed this article! If you’d like to stay connected, you’ll find 
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Curious programmer, tinkers around in Python and deep learning.
 Sharing concepts, ideas, and codes.
-","filter","feature","convolution","convolution","input","output","filter","feature","convolution"
+","filter","feature","convolution","feature","input","output","filter","feature","convolution"
 "An intro to Machine Learning for designers – UX Collective","There is an ongoing debate about whether or not designers should write code. Wherever you fall on this issue, most people would agree that designers should know about code. This helps designers understand constraints and empathize with developers. It also allows designers to think outside of the pixel perfect box when problem solving. For the same reasons, designers should know about machine learning.
 Put simply, machine learning is a “field of study that gives computers the ability to learn without being explicitly programmed” (Arthur Samuel, 1959). Even though Arthur Samuel coined the term over fifty years ago, only recently have we seen the most exciting applications of machine learning — digital assistants, autonomous driving, and spam-free email all exist thanks to machine learning.
 Over the past decade new algorithms, better hardware, and more data have made machine learning an order of magnitude more effective. Only in the past few years companies like Google, Amazon, and Apple have made some of their powerful machine learning tools available to developers. Now is the best time to learn about machine learning and apply it to the products you are building.
@@ -4052,7 +4052,7 @@ This article was originally published on conordewey.com
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Data Scientist & Writer | www.conordewey.com
 Sharing concepts, ideas, and codes.
-","ab","science","interview","post","interview","science","ab","science","interview"
+","ab","science","interview","sure","interview","science","ab","science","interview"
 "Must know Information Theory concepts in Deep Learning (AI)","Information theory is an important field that has made significant contribution to deep learning and AI, and yet is unknown to many. Information theory can be seen as a sophisticated amalgamation of basic building blocks of deep learning: calculus, probability and statistics. Some examples of concepts in AI that come from Information theory or related fields:
 In the early 20th century, scientists and engineers were struggling with the question: “How to quantify the information? Is there a analytical way or a mathematical measure that can tell us about the information content?”. For example, consider below two sentences:
 It is not difficult to tell that the second sentence gives us more information since it also tells that Bruno is “big” and “brown” in addition to being a “dog”. How can we quantify the difference between two sentences? Can we have a mathematical measure that tells us how much more information second sentence have as compared to the first?
@@ -4256,7 +4256,7 @@ Update 2: Nafrondel’s excellent, detailed reply is also a must read for an exp
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 A tinkerer
 Our community publishes stories worth reading on development, design, and data science.
-","zeroshot","translate","translation","neural","google","translation","zeroshot","translate","translation"
+","zeroshot","translate","translation","article","google","translation","zeroshot","translate","translation"
 "Machine Learning is Fun! Part 2 – Adam Geitgey – Medium","Update: This article is part of a series. Check out the full series: Part 1, Part 2, Part 3, Part 4, Part 5, Part 6, Part 7 and Part 8!
 You can also read this article in Italiano, Español, Français, Türkçe, Русский, 한국어 Português, فارسی, Tiếng Việt or 普通话.
 In Part 1, we said that Machine Learning is using generic algorithms to tell you something interesting about your data without writing any code specific to the problem you are solving. (If you haven’t already read part 1, read it now!).
@@ -4521,7 +4521,7 @@ I’ve been inspired by the huge response this article has received. I’m consi
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Studied Economics at Oxford University. Founder of www.moju.io. Interested in politics and AI.
 Technology trends and New Invention? Follow this collection to update the latest trend! [UPDATE] As a collection editor, I don’t have any permission to add your articles in the wild. Please submit your article and I will approve. Also, follow this collection, please.
-","sigmoid","neuron","formula","formula","neural","neuron","sigmoid","neuron","formula"
+","sigmoid","neuron","formula","network","neural","neuron","sigmoid","neuron","formula"
 "looking for a ghost in the machine – [ weird things ]","A short while ago, I wrote about some of the challenges involved in creating artificial intelligence and raised the question of how exactly a machine would spontaneously attain self-awareness. While I’ve gotten plenty of feedback about how far technology has come so far and how it’s imminent that machines will become much smarter than us, I never got any specifics as to how exactly this would happen. To me, it’s not a philosophical question because I’m used to looking at technology from a design and development standpoint. When I ask for specifics, I’m talking about functional requirements. So far, the closest thing to outlining the requirements for a super-intelligent computer is a paper by University of Oxford philosopher and futurist Nick Bostrom.
 The first thing Bostrom tries to do is to establish a benchmark by how to grade what he calls a super-intellect and qualifying his definition. According to him, this super-intellect would be smarter than any human mind in every capacity from the scientific to the creative. It’s a pretty lofty goal because designing something smarter than yourself requires that you build something you don’t fully understand. You might have a sudden stroke of luck and succeed, but it’s more than likely that you’ll build a defective product instead. Imagine building a DNA helix from scratch and with no detailed manual to go by. Even if you have all the tools and know where to find some bits of information to guide you, when you don’t know exactly what you’re doing, the task becomes very challenging and you end up making a lot of mistakes along the way.
 There’s also the question of how exactly we evaluate what the term smarter means. In Bostrom’s projections, when you have an intelligent machine become fully proficient in a certain area of expertise like say, medicine, it could combine with another machine which has an excellent understanding of physics and so on until all this consolidation leads to a device that knows all that we know and can use all that cross-disciplinary knowledge to gain insights we just don’t have yet. Technologically that should be possible, but the question is whether a machine like that would really be smarter than humans per se. It would be far more knowledgeable than any individual human, granted. But it’s not as if there aren’t experts in particular fields coming together to make all sorts of cross-disciplinary connections and discoveries. What Bostrom calls a super-intellect is actually just a massive knowledge base that can mine itself for information.
@@ -4564,7 +4564,7 @@ There’s a huge gap between human abilities and machinery because we have the b
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 techie, Rantt staff writer and editor, computer lobotomist
 science, tech, and other oddities
-","programmable","robotic","humanoid","computer","robotic","humanoid","programmable","robotic","humanoid"
+","programmable","robotic","humanoid","computer","robotic","humanoid","tear","robotic","humanoid"
 "The Evolving Role of Business Analytics – Frank Diana – Medium","An older post that seems to be getting a lot of attention. Appreciation for analytics rising?
 Business Analytics refers to the skills, technologies, applications and practices for the continuous exploration of data to gain insight that drive business decisions. Business Analytics is multi-faceted. It combines multiple forms of analytics and applies the right method to deliver expected results. It focuses on developing new insights using techniques including, data mining, predictive analytics, natural language processing, artificial intelligence, statistical analysis and quantitative analysis. In addition, domain knowledge is a key component of the business analytics portfolio. Business Analytics can then be viewed as the combination of domain knowledge and all forms of analytics in a way that creates analytic applications focused on enabling specific business outcomes.
 Analytic applications have a set of business outcomes that they must enable. For fraud, its reducing loss, for quality & safety, it might be avoiding expensive recalls. Understanding how to enable these outcomes is the first step in determining the make-up of each specific application. For example, in the case of insurance fraud, it’s not enough to use statistical analysis to predict fraud. You need a strong focus on text, domain expertise, and the ability to visually portray organized crime rings. Insight gained through this analysis may be used as input for human decisions or may drive fully automated decisions. Database capacity, processor speeds and software enhancements will continue to drive even more sophisticated analytic applications. The key components of business analytics are:
@@ -4797,7 +4797,7 @@ The figure above (Figure 13) is a concrete example of sampling bias. Say you wan
 There you have it. Being mindful of these limitations does not guarantee that your ML algorithm will solve all your problems, but it certainly reduces the risk of being disappointed when your model doesn’t generalize to unseen data. Now go on young Jedi: train your model, you must!
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 @nomadic_mind. Sometimes the difference between success and failure is the same as between = and ==. Living is in the details. 
-","unseen","leakage","hypothesis","price","hypothesis","model","unseen","leakage","hypothesis"
+","unseen","leakage","hypothesis","predict","hypothesis","model","unseen","leakage","hypothesis"
 "Classifying Websites with Neural Networks – Knowledge from Data: The Datafiniti Blog","At Datafiniti, we have a strong need for converting unstructured web content into structured data. For example, we’d like to find a page like:
 and do the following:
 Both of these are hard things for a computer to do in an automated manner. While it’s easy for you or me to realize that the above web page is selling some jeans, a computer would have a hard time making the distinction from the above page from either of the following web pages:
@@ -4841,7 +4841,7 @@ Here’s to the crazy ones indeed.
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Founder and CEO @ RawShark Studios.
 Latest News, Info and Tutorials on Artificial Intelligence, Machine Learning, Deep Learning, Big Data and what it means for Humanity.
-","hobbit","crazy","innovation","human","technology","innovation","hobbit","crazy","innovation"
+","hobbit","crazy","innovation","crazy","technology","innovation","hobbit","crazy","innovation"
 "I scheduled 1,019 meetings in 2012 — and that doesn’t count reschedules — x.ai","The number of meetings that I scheduled in 2012 might seem astronomical. Put in context, it’s less so. I was a startup-founder at the time, and that year my company, Visual Revenue, took Series-A funding, doubled revenue, and started discussing a possible exit.
 I like the number though! As a startup romantic one could turn it into a nifty Malcolm Gladwell type rule of thumb called the “1,000 meetings rule.” Gladwell’s claim that greatness requires an enormous time sacrifice rings true to me — whether that means investing 10,000 hours into a subject matter to become an expert or conducting a 1,000 meetings per year, is another question.
 More interesting though is the impact of this 1,019 figure, and a related one: Of those more than one thousand meetings I scheduled, 672 were rescheduled. That was painful. But these numbers were among the early pieces of data that inspired me to start x.ai.
@@ -4849,7 +4849,7 @@ More interesting though is the impact of this 1,019 figure, and a related one: O
 Originally published at x.ai on October 14, 2013.
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Magically schedule meetings
-","jfk","revenue","meeting","rule","year","meeting","jfk","revenue","meeting"
+","jfk","revenue","meeting","time","year","meeting","jfk","revenue","meeting"
 "Website morphing and more revolutions in marketing – Arjan Haring 🔮🔨 – Medium","John R. Hauser is the Kirin Professor of Marketing at M.I.T.’s Sloan School of Management where he teaches new product development, marketing management, and statistical and research methodology. He has served MIT as Head of the MIT Marketing Group, Head of the Management Science Area, Research Director of the Center for Innovation in Product Development, and co-Director of the International Center for Research on the Management of Technology.He is the co-author of two textbooks, Design and Marketing of New Products and Essentials of New Product Management, and a former editor of Marketing Science (now on the advisory board).I think it wouldn’t be smart to start this interview with something as dull and complex as a definition. Or am I the only one that likes to read light weight and short articles?Let’s just get it over with.
 “Website morphing matches the look and feel of a website to each customer so that, over a series of customers, revenue or profit are maximized.”
 That didn’t hurt as much as I expected. I actually love the idea. It sounds completely logical.
@@ -4955,7 +4955,7 @@ Disclaimer: Bloomberg Beta is an investor in Adatao, Alation, Aviso, BrightFunne
 For the full resolution version of the landscape please click here.
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Partner at Bloomberg Beta. All about machine intelligence for good. Equal parts nerd and athlete. Straight up Canadian stereotype and proud of it.
-","demo","landscape","intelligence","landscape","machine","intelligence","demo","intelligence","landscape"
+","demo","landscape","intelligence","many","machine","intelligence","demo","landscape","intelligence"
 "Will All Musicians Become Robots? – Roland Trimmel – Medium","Finally we see the rise of the machines, and with it develops a certain fear that artificial intelligence (AI) will render humans useless.
 This question was posed at Boston’s A3E Conference last month by a team member at Landr. Their company had received death threats from people in the mastering industry after having released a DIY drag-and-drop instant online mastering service powered by AI algorithms.
 It illustrates the resistance that the world of AI has incited amongst us. Some fear that robots will take over à la Terminator 2. Some fear that the virtual and artificial will replace the visceral. Some cite religious views, and others? Frankly, others just seem ignorant.
@@ -5113,7 +5113,7 @@ Background image: robots trashing living room by vincekamp, licensed under CC BY
 Personal permanent URL: http://simia.net/wiki/AI_is_coming,_and_it_will_be_boring
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Wikidata founder, Google ontologist, Semantic Web researcher, and  author.
-","ethical","guidance","boring","tool","human","ai","ethical","guidance","boring"
+","ethical","guidance","boring","powerful","human","ai","ethical","guidance","boring"
 "Of Comets and Gods in the Making – Thaddeus Howze – Medium","Asferit had not grown up; she didn’t know where she came from; could not conceive of childhood. No memories of parents, no recollection of family. On the vast empty world that served as her lab, she built the probes and put a little bit of herself in each one.
 Her machine-form, ancient, slow and sputtering came to life, wheezing through the long corridors of the silent lab, its darkness masking the distant empty spaces which Asferi imagined were once filled with life.
 She looked through her thoughts and realized she had lost any hope of memory, that part of her was already circling a distant star aborning with life. She looked in on those places when she woke to see the results of her work; on so many worlds life spawned.
@@ -5248,7 +5248,7 @@ I’ve been inspired by the huge response this article has received. I’m consi
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Studied Economics at Oxford University. Founder of www.moju.io. Interested in politics and AI.
 Technology trends and New Invention? Follow this collection to update the latest trend! [UPDATE] As a collection editor, I don’t have any permission to add your articles in the wild. Please submit your article and I will approve. Also, follow this collection, please.
-","sigmoid","neuron","formula","formula","neural","neuron","sigmoid","neuron","formula"
+","sigmoid","neuron","formula","network","neural","neuron","sigmoid","neuron","formula"
 "Facebook M — The Anti-Turing Test – Arik’s Blog","Facebook has recently launched a limited beta of its ground-breaking AI called M. M’s capabilities far exceed those of any competing AI. Where some AIs would be hard-pressed to tell you the weather conditions for more than one location (god forbid you go on a trip), M will tell you the weather forecast for every point on your route at the time you’re expected to get there, and also provide you with convenient gas station suggestions, account for traffic in its estimations, and provide you with options for food and entertainment at your destination.
 As many people have pointed out, there have been press releases stating that M is human-aided. However, the point of this article is not to figure out whether or not there are humans behind it, but to indisputably prove it.
 When communicating with M, it insists it’s an AI, and that it lives right inside Messenger. However, its non-instantaneous nature and the sheer unlimited complexity of tasks it can handle suggest otherwise. The opinion is split as to whether or not it’s a real AI, and there seems to be no way of proving its nature one way or the other.
@@ -5444,7 +5444,7 @@ Update: You can now use a fully realized version of the bot discussed in this po
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 I’m a designer and technologist in Austin, Texas. I co-founded XOXCO in 2008.
 The official blog of Howdy.ai and Botkit
-","slack","automation","bot","automation","team","bot","slack","automation","bot"
+","slack","automation","bot","automation","bot","team","slack","automation","bot"
 "Digital Transformation of Business and Society – Frank Diana – Medium","At a recent KPMG Robotic Innovations event, Futurist and friend Gerd Leonhard delivered a keynote titled “The Digital Transformation of Business and Society: Challenges and Opportunities by 2020”. I highly recommend viewing the Video of his presentation. As Gerd describes, he is a Futurist focused on foresight and observations — not predicting the future. We are at a point in history where every company needs a Gerd Leonhard. For many of the reasons presented in the video, future thinking is rapidly growing in importance. As Gerd so rightly points out, we are still vastly under-estimating the sheer velocity of change.
 With regard to future thinking, Gerd used my future scenario slide to describe both the exponential and combinatorial nature of future scenarios — not only do we need to think exponentially, but we also need to think in a combinatorial manner. Gerd mentioned Tesla as a company that really knows how to do this.
 He then described our current pivot point of exponential change: a point in history where humanity will change more in the next twenty years than in the previous 300. With that as a backdrop, he encouraged the audience to look five years into the future and spend 3 to 5% of their time focused on foresight. He quoted Peter Drucker (“In times of change the greatest danger is to act with yesterday’s logic”) and stated that leaders must shift from a focus on what is, to a focus on what could be. Gerd added that “wait and see” means “wait and die” (love that by the way). He urged leaders to focus on 2020 and build a plan to participate in that future, emphasizing the question is no longer what-if, but what-when. We are entering an era where the impossible is doable, and the headline for that era is: exponential, convergent, combinatorial, and inter-dependent — words that should be a key part of the leadership lexicon going forward. Here are some snapshots from his presentation:
@@ -5523,7 +5523,7 @@ You can run your own Obama-RNN by following these instructions:
 Get in touch here: https://twitter.com/samim | http://samim.io/
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Designer & Code Magician. Working at the intersection of HCI, Machine Learning & Creativity. Building tools for Enlightenment. Narrative Engineering.
-","obamarnn","political","bless","good","model","text","political","obamarnn","bless"
+","obamarnn","political","bless","model","good","text","political","obamarnn","bless"
 "Machine Learning is Fun! Part 2 – Adam Geitgey – Medium","Update: This article is part of a series. Check out the full series: Part 1, Part 2, Part 3, Part 4, Part 5, Part 6, Part 7 and Part 8!
 You can also read this article in Italiano, Español, Français, Türkçe, Русский, 한국어 Português, فارسی, Tiếng Việt or 普通话.
 In Part 1, we said that Machine Learning is using generic algorithms to tell you something interesting about your data without writing any code specific to the problem you are solving. (If you haven’t already read part 1, read it now!).
@@ -5839,7 +5839,7 @@ If successful, asteroid mining could lead to a new gold rush in outer space. Lik
 These are just a few of the amazing technologies we’ll see developed in the coming decades. 2016 is just the beginning of a new age of wonders. As futurist Kevin Kelly says:
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 www.cdixon.org/about
-","water","indoor","energy","energy","today","new","water","indoor","energy"
+","water","indoor","energy","example","today","new","water","indoor","energy"
 "Deep Learning the Stock Market – Tal Perry – Medium","Update 25.1.17 — Took me a while but here is an ipython notebook with a rough implementation
 In the past few months I’ve been fascinated with “Deep Learning”, especially its applications to language and text. I’ve spent the bulk of my career in financial technologies, mostly in algorithmic trading and alternative data services. You can see where this is going.
 I wrote this to get my ideas straight in my head. While I’ve become a “Deep Learning” enthusiast, I don’t have too many opportunities to brain dump an idea in most of its messy glory. I think that a decent indication of a clear thought is the ability to articulate it to people not from the field. I hope that I’ve succeeded in doing that and that my articulation is also a pleasurable read.
@@ -5947,7 +5947,7 @@ Update 2: Nafrondel’s excellent, detailed reply is also a must read for an exp
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 A tinkerer
 Our community publishes stories worth reading on development, design, and data science.
-","zeroshot","translate","translation","neural","google","translation","zeroshot","translate","translation"
+","zeroshot","translate","translation","article","google","translation","zeroshot","translate","translation"
 "Every single Machine Learning course on the internet, ranked by your reviews","A year and a half ago, I dropped out of one of the best computer science programs in Canada. I started creating my own data science master’s program using online resources. I realized that I could learn everything I needed through edX, Coursera, and Udacity instead. And I could learn it faster, more efficiently, and for a fraction of the cost.
 I’m almost finished now. I’ve taken many data science-related courses and audited portions of many more. I know the options out there, and what skills are needed for learners preparing for a data analyst or data scientist role. So I started creating a review-driven guide that recommends the best courses for each subject within data science.
 For the first guide in the series, I recommended a few coding classes for the beginner data scientist. Then it was statistics and probability classes. Then introductions to data science. Also, data visualization.
@@ -6585,7 +6585,7 @@ I am a lover of technology and how it can be applied in the business world. I ru
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 AI guy. MapQuest guy. Grow, innovate and transform companies with tech. Start-up investor, mentor and geek.
 Sharing concepts, ideas, and codes.
-","corporate","gold","ai","software","machine","ai","corporate","gold","ai"
+","corporate","gold","ai","many","machine","ai","corporate","gold","ai"
 "Explained Simply: How an AI program mastered the ancient game of Go","This is about AlphaGo, Google DeepMind’s Go playing AI that shook the technology world in 2016 by defeating one of the best players in the world, Lee Sedol.
 Go is an ancient board game which has so many possible moves at each step that future positions are hard to predict — and therefore it requires strong intuition and abstract thinking to play. Because of this reason, it was believed that only humans could be good at playing Go. Most researchers thought that it would still take decades to build an AI which could think like that. In fact, I’m releasing this essay today because this week (March 8–15) marks the two-year anniversary of the AlphaGo vs Sedol match!
 But AlphaGo didn’t stop there. 8 months later, it played 60 professional games on a Go website under disguise as a player named “Master”, and won every single game, against dozens of world champions, of course without resting between games.
@@ -6851,7 +6851,7 @@ Hope you enjoyed this article! If you’d like to stay connected, you’ll find 
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Curious programmer, tinkers around in Python and deep learning.
 Sharing concepts, ideas, and codes.
-","filter","feature","convolution","convolution","input","output","filter","feature","convolution"
+","filter","feature","convolution","feature","input","output","filter","feature","convolution"
 "Must know Information Theory concepts in Deep Learning (AI)","Information theory is an important field that has made significant contribution to deep learning and AI, and yet is unknown to many. Information theory can be seen as a sophisticated amalgamation of basic building blocks of deep learning: calculus, probability and statistics. Some examples of concepts in AI that come from Information theory or related fields:
 In the early 20th century, scientists and engineers were struggling with the question: “How to quantify the information? Is there a analytical way or a mathematical measure that can tell us about the information content?”. For example, consider below two sentences:
 It is not difficult to tell that the second sentence gives us more information since it also tells that Bruno is “big” and “brown” in addition to being a “dog”. How can we quantify the difference between two sentences? Can we have a mathematical measure that tells us how much more information second sentence have as compared to the first?
@@ -7629,7 +7629,7 @@ Tensor Flow: https://en.wikipedia.org/wiki/TensorFlow
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Founder of Chatbots Life. I help Companies Create Great Chatbots & AI Systems and share my Insights along the way.
 Latest News, Info and Tutorials on Artificial Intelligence, Machine Learning, Deep Learning, Big Data and what it means for Humanity.
-","matplotlib","cheat","sheet","numpy","sheet","cheat","matplotlib","cheat","sheet"
+","matplotlib","cheat","sheet","numpy","cheat","sheet","matplotlib","cheat","sheet"
 "Distributed Neural Networks with GPUs in the AWS Cloud","by Alex Chen, Justin Basilico, and Xavier Amatriain
 As we have described previously on this blog, at Netflix we are constantly innovating by looking for better ways to find the best movies and TV shows for our members. When a new algorithmic technique such as Deep Learning shows promising results in other domains (e.g. Image Recognition, Neuro-imaging, Language Models, and Speech Recognition), it should not come as a surprise that we would try to figure out how to apply such techniques to improve our product. In this post, we will focus on what we have learned while building infrastructure for experimenting with these approaches at Netflix. We hope that this will be useful for others working on similar algorithms, especially if they are also leveraging the Amazon Web Services (AWS) infrastructure. However, we will not detail how we are using variants of Artificial Neural Networks for personalization, since it is an active area of research.
 Many researchers have pointed out that most of the algorithmic techniques used in the trendy Deep Learning approaches have been known and available for some time. Much of the more recent innovation in this area has been around making these techniques feasible for real-world applications. This involves designing and implementing architectures that can execute these techniques using a reasonable amount of resources in a reasonable amount of time. The first successful instance of large-scale Deep Learning made use of 16000 CPU cores in 1000 machines in order to train an Artificial Neural Network in a matter of days. While that was a remarkable milestone, the required infrastructure, cost, and computation time are still not practical.
@@ -8627,7 +8627,7 @@ Tensor Flow: https://en.wikipedia.org/wiki/TensorFlow
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Founder of Chatbots Life. I help Companies Create Great Chatbots & AI Systems and share my Insights along the way.
 Latest News, Info and Tutorials on Artificial Intelligence, Machine Learning, Deep Learning, Big Data and what it means for Humanity.
-","matplotlib","cheat","sheet","numpy","sheet","cheat","matplotlib","cheat","sheet"
+","matplotlib","cheat","sheet","numpy","cheat","sheet","matplotlib","cheat","sheet"
 "Machine Learning for Humans, Part 2.1: Supervised Learning","How much money will we make by spending more dollars on digital advertising? Will this loan applicant pay back the loan or not? What’s going to happen to the stock market tomorrow?
 In supervised learning problems, we start with a data set containing training examples with associated correct labels. For example, when learning to classify handwritten digits, a supervised learning algorithm takes thousands of pictures of handwritten digits along with labels containing the correct number each image represents. The algorithm will then learn the relationship between the images and their associated numbers, and apply that learned relationship to classify completely new images (without labels) that the machine hasn’t seen before. This is how you’re able to deposit a check by taking a picture with your phone!
 To illustrate how supervised learning works, let’s examine the problem of predicting annual income based on the number of years of higher education someone has completed. Expressed more formally, we’d like to build a model that approximates the relationship f between the number of years of higher education X and corresponding annual income Y.
@@ -9603,7 +9603,7 @@ Understand the inner workings of Deep Learning through Python with Neural Networ
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Creator of @codeburstio — Frequently posting web development tutorials & articles. Follow me on Twitter too: @BrandonMorelli
 bursts of tech to power through your day
-","brandonmorelli","economic","duplex","learn","ai","machine","brandonmorelli","economic","duplex"
+","brandonmorelli","economic","duplex","google","ai","machine","shafkat","economic","duplex"
 "How to easily Detect Objects with Deep Learning on Raspberry Pi","Disclaimer: I’m building nanonets.com to help build ML with less data and no hardware
 The raspberry pi is a neat piece of hardware that has captured the hearts of a generation with ~15M devices sold, with hackers building even cooler projects on it. Given the popularity of Deep Learning and the Raspberry Pi Camera we thought it would be nice if we could detect any object using Deep Learning on the Pi.
 Now you will be able to detect a photobomber in your selfie, someone entering Harambe’s cage, where someone kept the Sriracha or an Amazon delivery guy entering your house.
@@ -10239,7 +10239,7 @@ Here’s to the crazy ones indeed.
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Founder and CEO @ RawShark Studios.
 Latest News, Info and Tutorials on Artificial Intelligence, Machine Learning, Deep Learning, Big Data and what it means for Humanity.
-","hobbit","crazy","innovation","human","technology","innovation","hobbit","crazy","innovation"
+","hobbit","crazy","innovation","crazy","technology","innovation","hobbit","crazy","innovation"
 "De la coopération entre les hommes et les machines, pour une approche pair-à-pair de l’intelligence...","Originally published at www.cuberevue.com on November 6, 2013.
 Lundi matin, huit heures, 2007, centre d’examen d’Arcueil. Mille têtes sont laborieusement penchées sur des bureaux en bois, abîmés par les stylos qui grattent sur de minces feuilles de papier. Les voies ferrées bordent l’enclave, les trains font trembler le bâtiment en rythme, les têtes se relèvent un instant, distraites, puis s’en retournent se concentrer sur l’écriture studieuse et pressée de la copie. Les surveillants passent dans les rangs, impassibles, guettent toute tête qui tourne, toute main qui se dérobe dans la poche d’un jean. Seuls les bruits de papier froissé sont perceptibles et, lorsqu’ils s’estompent, un silence de mort règne sur la salle. Mille élèves sont isolés pour répondre en six heures à une question difficile. Toute interaction avec leurs pairs leur est interdite, ils ne peuvent consulter leurs notes si un oubli inattendu vient perturber le fil de leur pensée. Les devoirs produits par les élèves tomberont dans l’oubli, stockées dans un hangar dédié qui accueille des papiers d’examen depuis maintes générations.
 Quelques années plus tard, j’anime un atelier qui s’étend sur toute la journée dans une grande salle blanche avec une vingtaine d’ordinateurs. Autour de moi, des groupes d’élèves discutent, rient, et oscillent entre une feuille de dessin et l’écran d’ordinateur. Certains s’isolent pour coder, d’autres sont penchés sur une imprimante 3D qui produit un design open source qu’ils viennent de télécharger. Les élèves consultent leurs professeurs, demandent conseil aux experts présents dans la salle et partagent leur avancement avec les autres. Certains abandonnent momentanément leur propre groupe pour aider leurs amis dans un groupe concurrent. L’atelier consiste à remixer des œuvres artistiques tombées dans le domaine public ou en open source. Aucune évaluation n’est prévue, les réactions des personnes présentes est la seule mesure de la qualité de leur production. Je pense en les regardant qu’ils ont une chance infinie de pouvoir librement puiser dans tous les puits de connaissance existants : leur intelligence, celle des pairs et accompagnateurs, la quasi-totalité des productions de l’humanité, et surtout, le savoir global présent à portée de main. A la clôture de l’atelier, leurs œuvres nous paraissent surprenantes, originales et leur qualité dépasse toutes nos attentes. Nos doutes sur la capacité des élèves à défricher de la matière brute et en extraire une forme structurée en une après-midi étaient vains, ils nous font désormais sourire.
@@ -10310,7 +10310,7 @@ Jonze gives the movie away twice. Theodore’s colleague blurts out the observat
 In limiting the analysis of “Her” to the question of a future where we’re intimate with machines, we miss the opportunity to look at the dynamic that institutionalized love has created. Among other things, contemporary love relationships come with an expectation of emotional support. Perhaps it’s the forcible aspect of seeing our limitations reflected in another person that turns relationships sour. Or maybe we’ve reached a point in our cultural evolution where we’ve accepted that other people should stand in for our specific ideal of “a good mother” until they can’t or won’t, and then we move on to the next person, or don’t. Or maybe we’re near the point of catharsis, as evidenced by the widespread viewership of this film, unconsciously exploring the idea that we should face ourselves before asking someone else to do the same.
 When we end important relationships, or go through rough patches within them, intimacy evaporates and we’re left alone with ourselves. It’s often at those times that we encounter parts of ourselves we don’t understand or have ignored in place of the needs and wants of that “significant other.” It’s frightening to realize you don’t know yourself entirely, but more so if you don’t possess the skills or confidence to reconnect. Avoidance is an understandable response, but it sends people down Theodore’s path of isolation and, inevitably, depression. It’s a life, it’s livable, but it’s not happy, loving, or full. “Her” suggests the alternative is to accept that there’s more to learn about yourself, always, and that intimacy with another person is both possible and sustainable once you have a comfortable relationship with yourself. However we get to know ourselves, through self-reflection, through others, or even through software, the effort that goes into that relationship earns us the confidence, finally, to be ourselves with another person.
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
-","samantha","theodore","jonze","relationship","person","software","samantha","theodore","jonze"
+","samantha","theodore","jonze","point","person","software","samantha","theodore","jonze"
 "‘Her’ is our space odyssey. – Jorge Camacho – Medium","I have a confession to make: I didn’t like Gravity.
 It’s not so much that I failed to appreciate it for the major cinematographic work that it certainly is. It’s rather that it stands as a profoundly depressing symptom of an age when it has become almost impossible to realistically dream of space exploration—and thus, of an encounter with radical Otherness.
 With Gravity, all that is left for humanity is survival: lying, face down, in our own little muddy planet.
@@ -10492,7 +10492,7 @@ All righty. See you on Slack, err, slackers.
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Head of Creative at betaworks, New York.
 Ideas and Observations from betaworks
-","forecast","slack","poncho","new","slack","poncho","forecast","slack","poncho"
+","forecast","slack","poncho","text","slack","poncho","forecast","slack","poncho"
 "I think I’m slowly turning into a cyborg – Becoming Human: Artificial Intelligence Magazine","It’s only a matter of time.
 As much of life moves online, atomized into bits on apps, social networks and a variety of other web products, I’m beginning to notice more and more that I rely on these tools to supplement my brainpower.
 It sounds melodramatic, I realize, but go with me for a second here.
@@ -10518,7 +10518,7 @@ Did you enjoy this? Subscribe to my newsletter, Net IRL, a weekly roundup of som
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 lifelong learner, connector and musician. first social, now digital strategy @thomsonreuters. into tech/media/life. 👨🏻‍💻🤷🏻‍♂️
 Latest News, Info and Tutorials on Artificial Intelligence, Machine Learning, Deep Learning, Big Data and what it means for Humanity.
-","unhealthy","cyborg","birthday","technology","day","much","unhealthy","cyborg","birthday"
+","unhealthy","cyborg","birthday","technology","much","day","unhealthy","cyborg","birthday"
 "Your Temporary Instant Disposable Dreamhouse for the Weekend","Close colleagues of mine will tell you I have honed a particular obsession/crackpot theory over the past few years: that Airbnb has been gently A/B testing me in real life.
 Let me explain. I travel more than most humans should. As someone who runs their own company, and sometimes needs to spend more time in a location than is affordable via traditional hotel lodgings (such as with a recent relocation over the summer), I have made use of that darling of the sharing economy/scourge of communities (depending on which lens you look at it through), Airbnb, to stretch my budget, spend time closer to work, friends, clients, or just have company when traveling. I’ve stayed in over 30 properties, in something like eight countries, so I’ve had a lot of time to contemplate the company’s strategies from the inside.
 The semi-serious theory started during back-to-back stays in the UK several years ago. My first three night stay was in a London borough, in a fairly cozy house owned by a couple with a toddler. It was comfortable enough, though a bit chilly in both bedroom and shared bath. The interior design wasn’t miles off my tastes, but it didn’t push any buttons of joy either, mostly catalog-standard late 20th century British home store. I never even sat down on the ground floor. The bits of media I saw around the house were mildly interesting, if predictable, but not must-reads or binge-viewable. I wasn’t really allowed in the kitchen, which was reserved for use by the family only. The wife of the couple has formerly worked in media on a cooking show, the husband in finance. I hardly saw either of them, as they made themselves scarce.
@@ -10682,7 +10682,7 @@ Jack Reader, Business Development Manager at ThingWorx (now at Verizon) says, �
 The implications in terms of knowledge gained and positive health outcomes is so phenomenal that we almost can’t now imagine from this early stage in the IoT era all the possible sources nor all the insights that will be gained. However, the sooner IoT Analytics is adopted in the hospital, the sooner patients can expect better-run hospitals and healthier lives. This is only the beginning of a new era.
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Ph.D. Fulbright Scholar. Storyteller. Communications Expert. Content maven. Formerly State Dept-Startups-Cisco & more.
-","glassbeam","thingworx","catheter","iot","medical","heart","thingworx","glassbeam","catheter"
+","glassbeam","thingworx","catheter","medical","iot","heart","thingworx","glassbeam","catheter"
 "Everyday IA – Louis Rosenfeld – Medium","A few days ago, Cennydd Bowles gently trolled many of us thusly:
 As Cennydd has keynoted a past Information Architecture Summit, it’s hard to ignore his question. And Cennydd’s timing is quite interesting, given that tomorrow is World IA Day.
 The theme of this year’s WIAD is “architecting happiness”. And in this adorable little video that the IA Institute created to promote WIAD 2015, Abby Covert says that this theme was chosen “because of the rising amount of information that everyone has to deal with” (my italics):
@@ -10967,7 +10967,7 @@ Ever since TensorFlow has been released the community surrounding the project ha
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Co-founder & CTO of Apteo: Researching machine learning techniques to improve investing. Come join us!
 how hackers start their afternoons.
-","regression","classification","convolved","regression","use","classification","regression","classification","convolved"
+","regression","classification","convolved","model","use","classification","regression","classification","convolved"
 "How to Create a Chatbot Without Coding a Single Line","Chatbots are ready to succeed. If you think you have to hack days or even weeks to create a chatbot, you might be wrong. You don’t have to be aware of any coding skills. Immediately after big players like Facebook Messenger or Skype opened their platform for programmers many tools emerged. With this article I want to give you an introduction to mockup and overview of different tools to build your first chatbot.
 You’re having an idea? You want to show your use case? It’s definitely recommendable to mockup your story beforehand. First, you may find some bugs in your concept. Moreover, you will be able to explain a showcase to noninvolved people based on the motto: “fake it ’til you make it”.
 It’s very intuitive storytelling. Just insert what the user says and what the bot responds. Using the settings option, you can edit smartphone models, decide number of fans, and choose a profile picture, a page category and a welcome message. Additional features are buttons, images and quick replies. The whole story acts like a movie by pushing the play button. It can be shared by just one click and it’s possible to save the file as mp4 within the paid plan.
@@ -12405,7 +12405,7 @@ I hope this collection helps with your modeling endeavors! Let me know your best
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Data Science Nomad
 Sharing concepts, ideas, and codes.
-","nomad","mnist","plot","deep","example","model","pydotgraph","mnist","plot"
+","nomad","mnist","plot","deep","model","example","pydotgraph","mnist","plot"
 "Simple Reinforcement Learning with Tensorflow Part 0: Q-Learning with Tables and Neural Networks","For this tutorial in my Reinforcement Learning series, we are going to be exploring a family of RL algorithms called Q-Learning algorithms. These are a little different than the policy-based algorithms that will be looked at in the the following tutorials (Parts 1–3). Instead of starting with a complex and unwieldy deep neural network, we will begin by implementing a simple lookup-table version of the algorithm, and then show how to implement a neural-network equivalent using Tensorflow. Given that we are going back to basics, it may be best to think of this as Part-0 of the series. It will hopefully give an intuition into what is really happening in Q-Learning that we can then build on going forward when we eventually combine the policy gradient and Q-learning approaches to build state-of-the-art RL agents (If you are more interested in Policy Networks, or already have a grasp on Q-Learning, feel free to start the tutorial series here instead).
 Unlike policy gradient methods, which attempt to learn functions which directly map an observation to an action, Q-Learning attempts to learn the value of being in a given state, and taking a specific action there. While both approaches ultimately allow us to take intelligent actions given a situation, the means of getting to that action differ significantly. You may have heard about DeepQ-Networks which can play Atari Games. These are really just larger and more complex implementations of the Q-Learning algorithm we are going to discuss here.
 For this tutorial we are going to be attempting to solve the FrozenLake environment from the OpenAI gym. For those unfamiliar, the OpenAI gym provides an easy way for people to experiment with their learning agents in an array of provided toy games. The FrozenLake environment consists of a 4x4 grid of blocks, each one either being the start block, the goal block, a safe frozen block, or a dangerous hole. The objective is to have an agent learn to navigate from the start to the goal without moving onto a hole. At any given time the agent can choose to move either up, down, left, or right. The catch is that there is a wind which occasionally blows the agent onto a space they didn’t choose. As such, perfect performance every time is impossible, but learning to avoid the holes and reach the goal are certainly still doable. The reward at every step is 0, except for entering the goal, which provides a reward of 1. Thus, we will need an algorithm that learns long-term expected rewards. This is exactly what Q-Learning is designed to provide.
@@ -12574,7 +12574,7 @@ Thus Dataset API is very good for increasing your training speed. With no source
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Adaptive Application Security for DevOps. @NGINX partner. @YCombibator S16
 Wallarm is DevOps-friendly WAF with hybrid architecture uniquely suited for cloud applications. It applies machine learning to traffic to adaptively generate security rules and verifies the impact of malicious payloads in real time
-","httpsgithubcomwallarmresearchesbloba","deea","cbfc","api","model","dataset","cbfc","dataset","httpsgithubcomwallarmresearchesbloba"
+","httpsgithubcomwallarmresearchesbloba","deea","cbfc","api","model","dataset","deea","cbfc","httpsgithubcomwallarmresearchesbloba"
 "ИИ-психопат и ИИ-обманщик – Hey Machine Learning","Команда исследователей из Массачусетского технологического института (MIT) представила нейронную сеть Norman, которая распознает изображения и генерирует текстовое описание к ним. Ее особенность в том, что ученые тренировали сеть на картинках с подписями о смерти из сообщества Reddit и Norman во всем видит ужасы. Алгоритм назван в честь персонажа романа “Психо” — убийцы с раздвоением личности Нормана Бейтса. Специалисты хотели продемонстрировать важность данных, на которых обучают модель, а также их сбалансированность.
 Чтобы наглядно показать влияние данных на результат, исследователи из MIT показали картинки из теста Роршаха двум нейросетям: ИИ-алгоритму, который обучали на обычных наборах с изображениями людей, кошек и птиц, и Norman. Если обычная нейросеть видела на представленных картинках вазу с цветами, стаю птиц на ветке или сидящих на лавочке людей, то психопатическая сеть определяла это как застреленного мужчину или человека, выпрыгнувшего из окна, сбитого машиной на высокой скорости или убитого разрядом электрического тока.
 Инженеры из MIT утверждают, что создали нейросеть Norman как напоминание, что поведение ИИ — вина не его алгоритмов, а данных для его обучения.
@@ -12722,7 +12722,7 @@ Tensor Flow: https://en.wikipedia.org/wiki/TensorFlow
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Founder of Chatbots Life. I help Companies Create Great Chatbots & AI Systems and share my Insights along the way.
 Latest News, Info and Tutorials on Artificial Intelligence, Machine Learning, Deep Learning, Big Data and what it means for Humanity.
-","matplotlib","cheat","sheet","numpy","sheet","cheat","matplotlib","cheat","sheet"
+","matplotlib","cheat","sheet","numpy","cheat","sheet","matplotlib","cheat","sheet"
 "Yes you should understand backprop – Andrej Karpathy – Medium","When we offered CS231n (Deep Learning class) at Stanford, we intentionally designed the programming assignments to include explicit calculations involved in backpropagation on the lowest level. The students had to implement the forward and the backward pass of each layer in raw numpy. Inevitably, some students complained on the class message boards:
 This is seemingly a perfectly sensible appeal - if you’re never going to write backward passes once the class is over, why practice writing them? Are we just torturing the students for our own amusement? Some easy answers could make arguments along the lines of “it’s worth knowing what’s under the hood as an intellectual curiosity”, or perhaps “you might want to improve on the core algorithm later”, but there is a much stronger and practical argument, which I wanted to devote a whole post to:
 > The problem with Backpropagation is that it is a leaky abstraction.
@@ -13035,7 +13035,7 @@ Note: Submissions do not necessarily represent the views of the editors.
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Studied Economics at Oxford University. Founder of www.moju.io. Interested in politics and AI.
 Fundamentals and Latest Developments in #DeepLearning
-","hierarchal","kurzweil","recogniser","human","mind","brain","hierarchal","kurzweil","recogniser"
+","hierarchal","kurzweil","recogniser","kurzweil","mind","brain","hierarchal","kurzweil","recogniser"
 "Taking Keras to the Zoo – Gab41","If you follow any of the popular blogs like Google’s research, FastML, Smola’s Adventures in Data Land, or one of the indie-pop ones like Edwin Chen’s blog, you’ve probably also used ModelZoo. Actually, if you’re like our boss, you affectionately call it “The Zoo”. (Actually x 2, if you have interesting blogs that you read, feel free to let us know!)
 Unfortunately, ModelZoo is only supported in Caffe. Fortunately, we’ve taken a look at the difference between the kernels in Keras, Theano, and Caffe for you, and after reading this blog, you’ll be able to load models from ModelZoo into any of your favorite Python tools.
 Why this post? Why not just download our Github code?
@@ -13766,7 +13766,7 @@ Tensor Flow: https://en.wikipedia.org/wiki/TensorFlow
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Founder of Chatbots Life. I help Companies Create Great Chatbots & AI Systems and share my Insights along the way.
 Latest News, Info and Tutorials on Artificial Intelligence, Machine Learning, Deep Learning, Big Data and what it means for Humanity.
-","matplotlib","cheat","sheet","numpy","sheet","cheat","matplotlib","cheat","sheet"
+","matplotlib","cheat","sheet","numpy","cheat","sheet","matplotlib","cheat","sheet"
 "Understanding Activation Functions in Neural Networks","Recently, a colleague of mine asked me a few questions like “why do we have so many activation functions?”, “why is that one works better than the other?”, ”how do we know which one to use?”, “is it hardcore maths?” and so on. So I thought, why not write an article on it for those who are familiar with neural network only at a basic level and is therefore, wondering about activation functions and their “why-how-mathematics!”.
 NOTE: This article assumes that you have a basic knowledge of an artificial “neuron”. I would recommend reading up on the basics of neural networks before reading this article for better understanding.
 So what does an artificial neuron do? Simply put, it calculates a “weighted sum” of its input, adds a bias and then decides whether it should be “fired” or not ( yeah right, an activation function does this, but let’s go with the flow for a moment ).
@@ -14449,7 +14449,7 @@ Let me know what you think.
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Machine learning engineer, doer/maker/dreamer, father
 how hackers start their afternoons.
-","generate","description","gan","generate","network","image","generate","description","gan"
+","generate","description","gan","network","generate","image","generate","description","gan"
 "Stochastic Weight Averaging — a New Way to Get State of the Art Results in Deep Learning","In this article, I will discuss two interesting recent papers that provide an easy way to improve performance of any given neural network by using a smart way to ensemble. They are:
 Additional prerequisite reading that will make context of this post much more easy to understand:
 Traditional ensembling combines several different models and makes them predict on the same input. Then some way of averaging is used to determine the final prediction of the ensemble. It can be simple voting, an average or even another model that learns to predict correct value or label based on the inputs of models in the ensemble. Ridge regression is one particular way of combining several predictions which is used by Kaggle-winning machine learning practitioners.
@@ -14598,7 +14598,7 @@ I predict in the near future that we shall see more aggressive research in this 
 From a quick cheer to a standing ovation, clap to show how much you enjoyed this story.
 Author of Artificial Intuition and the Deep Learning Playbook — Intuition Machine Inc.
 Deep Learning Patterns, Methodology and Strategy
-","neuron","cognition","dl","complex","neuron","research","neuron","cognition","dl"
+","neuron","cognition","dl","complex","research","neuron","neuron","dl","cognition"
 "“WTH does a neural network even learn??” — a newcomer’s dilemma","I believe, we all have that psychologist/philosopher in our brains that likes to ponder upon how thinking happens.
 There.
 A simple, clear bird’s eye view of what neural networks learn — they learn “increasingly more complex concepts”.

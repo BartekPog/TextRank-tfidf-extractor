@@ -1,6 +1,6 @@
 #include "rewrite.h"
 
-int rewriteWithKeywords(FILE *inFile, FILE *outFile, struct countData *cntData, int keywordNum)
+int rewriteWithKeywords(FILE *inFile, FILE *outFile, struct countData *cntData, int keywordNum, int adjacencyWindow)
 {
     if (!inFile)
     {
@@ -43,13 +43,13 @@ int rewriteWithKeywords(FILE *inFile, FILE *outFile, struct countData *cntData, 
 
         fputc(',', outFile);
 
-        struct tokenListElem *textRankTokenHead = getTextRankfKeywords(keywordNum, tokenHead, cntData, 0, 2, 20);
+        struct tokenListElem *textRankTokenHead = getTextRankfKeywords(keywordNum, tokenHead, cntData, 0, adjacencyWindow, 20);
         writeList(outFile, textRankTokenHead); // TextRank
         freeTokenList(&textRankTokenHead);
 
         fputc(',', outFile);
 
-        struct tokenListElem *textRankIDFTokenHead = getTextRankfKeywords(keywordNum, tokenHead, cntData, 1, 2, 20);
+        struct tokenListElem *textRankIDFTokenHead = getTextRankfKeywords(keywordNum, tokenHead, cntData, 1, adjacencyWindow, 20);
         writeList(outFile, textRankIDFTokenHead); // TextRankIDF
         freeTokenList(&textRankIDFTokenHead);
 

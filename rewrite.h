@@ -18,9 +18,10 @@
  * @param outFile Pointer to the output file stream set on start position
  * @param cntData Count data necessary for IDF 
  * @param keywordNum Number of keywords to find
+ * @param adjacencyWindow TextRank adjacencyWindowSize
  * @return int returns 0 if there were no errors
  */
-int rewriteWithKeywords(FILE *inFile, FILE *outFile, struct countData *cntData, int keywordNum);
+int rewriteWithKeywords(FILE *inFile, FILE *outFile, struct countData *cntData, int keywordNum, int adjacencyWindow);
 
 /**
  * @brief reqrites one character and returns the rewritten character

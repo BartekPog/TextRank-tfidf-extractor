@@ -15,6 +15,7 @@ int areParamsOk(int argc, char *argv[])
         case 'i':
         case 'o':
         case 'k':
+        case 'w':
             break;
 
         default:

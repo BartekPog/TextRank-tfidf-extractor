@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     if (!areParamsOk(argc, argv))
     {
         printf("ERR: Invalid input parameters!\n\n");
-        printf("To set custom parameters use:\n -i\tSet input file\n -o\tSet output file\n -k Set number of keywords to extract per algorithm\n\n");
+        printf("To set custom parameters use:\n -i\tSet input file\n -o\tSet output file\n -k Set number of keywords to extract per algorithm\n -w Set TextRank adjacency window size\n\n");
         return 0;
     }
 
@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
     FILE *outFile = fopen(params->outFile, "w");
 
     printf("Rewriting with keywords\n");
-    rewriteWithKeywords(inFile, outFile, cntData, params->keywordNum);
+    rewriteWithKeywords(inFile, outFile, cntData, params->keywordNum, params->adjacencyWidnow);
 
     printf("Cleaning memory\n");
     fclose(outFile);

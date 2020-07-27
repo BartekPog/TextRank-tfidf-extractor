@@ -3,6 +3,7 @@
 struct inputParameters *handleInput(int argc, char *argv[])
 {
     struct inputParameters *params = malloc(sizeof(struct inputParameters));
+    params->adjacencyWidnow = DEFAULT_ADJACENCY_WINDOW;
     params->keywordNum = DEFAULT_KEYWORD_NUM;
     params->inFile = NULL;
     params->outFile = NULL;
@@ -17,6 +18,9 @@ struct inputParameters *handleInput(int argc, char *argv[])
 
         if (strcmp(argv[i], "-k") == 0)
             params->keywordNum = atoi(argv[i + 1]);
+
+        if (strcmp(argv[i], "-w") == 0)
+            params->adjacencyWidnow = atoi(argv[i + 1]);
     }
 
     if (!params->inFile)
