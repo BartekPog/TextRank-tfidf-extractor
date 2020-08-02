@@ -6,8 +6,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define DEFAULT_IN_FILE "data/prepared.csv"
-#define DEFAULT_OUT_FILE "data/sample_out.csv"
+#define DEFAULT_IN_FILE "../data/prepared.csv"
+#define DEFAULT_OUT_FILE "../data/sample_out.csv"
 #define DEFAULT_KEYWORD_NUM 3
 #define DEFAULT_ADJACENCY_WINDOW 2
 

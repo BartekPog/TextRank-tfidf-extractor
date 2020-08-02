@@ -1,7 +1,6 @@
 .env/
 __pycache__/
 .vscode/
-# data/sample_out.csv 
-*.o
-main
-test
+src/*.o
+src/main
+src/test

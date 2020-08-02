@@ -25,6 +25,7 @@ int main(int argc, char *argv[])
     {
         printf("ERR: Wrong input file!\n\n");
         printf("Input file shall be a CSV file with forced quoting consisting of three columns HEADING, ARTICLE, TOKENS without headers line\n\n");
+        freeInputParameters(params);
         return 0;
     }
 
@@ -34,6 +35,7 @@ int main(int argc, char *argv[])
     {
         printf("ERR: cannot open input file\n");
         fclose(inFile);
+        freeInputParameters(params);
         return 0;
     }
 

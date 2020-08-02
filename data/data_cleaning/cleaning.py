@@ -5,8 +5,8 @@ import transformers
 
 # nltk.download()
 
-DATAFRAME_PATH = "data/articles.csv"
-OUT_CSV_PATH = "data/prepared.csv"
+DATAFRAME_PATH = "../articles.csv"
+OUT_CSV_PATH = "../prepared.csv"
 MIN_TOKENS = 3
 
 df = pd.read_csv(DATAFRAME_PATH)
